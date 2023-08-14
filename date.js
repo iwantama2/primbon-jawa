@@ -3,7 +3,7 @@
  * @description JavaScript Hijri Date Function
  * @version 1.1
  * 
- * @author (c) Siap Ngoding, Jakarta, Agustus 2023
+ * @author (c) ZulNs, Yogyakarta, December 2013
  * 
  * @namespace HijriDate
  */
