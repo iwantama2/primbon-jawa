@@ -2,7 +2,7 @@
 /*********************************************
  * Hijri - Gregorian Date Picker             *
  *                                           *
- * Design by Siap Ngoding @Jakarta, Agustus 2023 *
+ * Design by ZulNs @Yogyakarta, January 2016 *
  *********************************************/
 
 function Calendar(isHijriMode, firstDayOfWeek, isAutoHide, isAutoSelectedDate, year, month, date) {
