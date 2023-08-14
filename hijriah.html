@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="index, follow">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.siapngoding.my.id/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.siapngoding.my.id/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.siapngoding.my.id/favicon.ico">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Kalender Hijriyah Lengkap dengan Jadwal Sholat dan Puasa</title>
+<meta itemprop="description" name="description" class="to_tahun"/>
+<meta property="og:locale" content="id">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kalender Hijriyah Terlengkap Dengan Jadwal Sholat seluruh kota di Indonesia, Indikator Puasa dan lain lain">
+<meta property="og:url" content="https://iwantama2.github.io/primbon-jawa/">
+<meta property="og:site_name" content="Kalender Hijriyah Lengkap dengan Jadwal Sholat dan Puasa">
+<meta property="og:description" content="Kalender Hijriyah Terlengkap Dengan Jadwal Sholat seluruh kota di Indonesia, Indikator Puasa dan lain lain">
+<meta content="Kalender Hijriyah" name="siapngoding">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@publisher_handle">
+<meta name="twitter:title" content="Kalender Hijriyah Lengkap dengan Jadwal Sholat dan Puasa">
+<meta name="twitter:description" content="Kalender Hijriyah Online lengkap dengan Jam Digital, Dina Pasaran, Neptu, Sasi, Tahun Masehi, Tahun Hijriyah lan Wuku.">
+<meta name="twitter:creator" content="@author_handle">
+<meta name="twitter:image" content="/images/kalender.jpg">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Kalender Hijriyah Lengkap dengan Jadwal Sholat dan Puasa" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://iwantama2.github.io/primbon-jawa/hijriah.html" />
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/iwantama2/logo@main/android-chrome-192x192.png" />
+<meta property="fb:admins" content="Facebook numeric ID" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/iwantama2/primbon-jawa/jquery.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+      	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iwantama2/primbon-jawa/final.css" />
+
+<style>
+	.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999999; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 25px 5px #100000;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#save{
+	height: 75px;
+    width: 100%;
+    background: #a8f7a8;
+	cursor: not-allowed;
+}
+#countdowntimer{
+	padding: 10px 0px;
+    text-align: center;
+}
+
+#downloadbtn{
+	width: 100%;
+    border-radius: 10px;
+    background-color: #4768de;
+    padding: 10px;
+    height: 100%;
+    color: white;
+}
+.item{
+	margin: 10px !important;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid grey;
+	border-radius: 10px 10px 0px 0px;
+    font-size: 80%;
+    background-color: #efefef;
+}
+.value{
+	margin: 10px !important;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid grey;
+    margin-top: -11px !important;
+	border-radius: 0px 0px 10px 10px;
+}
+.hasilhead{
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    
+    background: -webkit-gradient(linear, left top, right bottom, from(#d66bd3), to(#ae2323));
+    background: linear-gradient(to bottom right, #d66bd3 0%, #ae2323 100%);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 2px #afafaf;
+    
+    
+}
+
+#sc{
+	margin-top: 10px;
+	font-size: 75%;
+	text-align:center;
+	padding: 10px;
+}
+
+
+
+
+
+.list{
+    padding: 5px 10px;
+    background: #efefef;
+    margin-bottom: 5px;
+	}
+table{
+border-collapse: collapse;
+width:100%;
+}
+table, th, td {
+  border: 1px solid #778ca3;
+}
+.button{
+margin-bottom: 10px;
+    padding: 10px;
+    background: #778ca3;
+    border: none;
+    border-bottom: 2px solid rgba(50,50,50,.1);
+    border-radius: 3px;
+    color: #fff;
+    padding: 0 15px;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: .85em;
+    font-weight: 700;
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    -webkit-backface-visibility: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.12);
+    transition: all .3s;
+	}
+	
+	.kalkulatorval{
+	padding: 10px;
+    background: #ffffff29;
+    border-radius: 5px;
+	margin-bottom:15px;
+}
+
+
+#kalkulatorresult{
+	font-size:80%;
+}
+#w9-kalkulator h2{
+	color:white;
+}
+
+#w9-kalkulator{
+	background: -webkit-gradient(linear, left top, right bottom, from(#d66bd3), to(#ae2323));
+    background: linear-gradient(to bottom right, #d66bd3 0%, #ae2323 100%);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 2px #afafaf;
+}
+	
+	
+	.input_tahun{
+	width: 75px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 2px 2px 10px #f0f0f0;
+    border-radius: 5px;
+    color:red;
+	}
+.input_tggl{
+	padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 2px 2px 10px #f0f0f0;
+    border-radius: 5px;
+    color:red;
+	}
+	
+	.kal-select{
+	font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    margin: 0px 3px 10px 3px;
+    margin-bottom: 10px;
+    width: 110px;
+    font-size: 15px;
+    height: 35px;
+    border: none;
+    box-shadow: 2px 2px 10px  #f0f0f0;
+    border-radius: 5px;
+    color: red;
+    background-color: #e6e6e6;
+	}
+	#hasil{
+		border-radius: 10px;
+		margin-top:5px;
+		margin-bottom: 10px;
+		box-shadow: 3px 3px 10px 2px #afafaf;
+		background-color: white;
+		padding-bottom: 10px;
+	}
+	.m-date{
+		font-size: 20px;
+    text-align: center;
+    margin: 0 !important;
+    padding: 15px 0;
+    font-weight: bold;
+	}
+	.h-date{
+		font-size: 8px;
+    text-align: center;
+    margin: 0 !important;
+    color: green;
+    margin-bottom: 5px;
+	}
+	#setbulan{
+		padding: 10px 5px;
+    background: #f0f0f0;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+	}
+	.det{
+		display:none;
+	}
+	.calendar-java{
+		margin-bottom:10px;
+	}
+	
+	
+	/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: -17px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.info{
+	padding: 10;
+    background: linear-gradient(20deg, #b993d6, #8ca6db);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+	}
+.wk{
+    margin: 0;
+}
+.card-head h2{
+	color: white;
+    font-weight: normal;
+    font-size: 120%;
+    margin: 0;
+}
+#see_more{
+	margin: -10px 0px 0px 0px;
+    text-align: center;
+	text-decoration: underline;
+	cursor:pointer;
+}
+.card-content{
+	margin: 10px 0px 0px 0px;
+}
+.kalender{
+	margin-left: -20px;
+    margin-right: -20px;
+}
+	
+.emot{
+    padding: auto;
+    border-radius: 1px;   
+    margin: 35px;
+	width: 100%; 
+	height: 20px;
+	display: inline-block;
+}	
+	
+.card{
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.29);
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.29);
+    margin-bottom: 1px;
+}
+	
+.card-sholat{
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.29);
+    box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.29);
+    margin-bottom: 1px;
+}	
+	
+.col-s3{
+	display: inline-block;
+}
+.col-s6{
+    margin-top: 5px;
+    display: inline-block;
+    width: 49%;
+}
+
+.col-s6b{
+    margin-top: 5px;
+    display: inline-block;
+    width: 89%;
+}	
+	
+	
+.col-s8{
+    margin-top: 5px;
+    display: inline-block;
+    width: 66%;
+}
+.col-s4{
+    margin-top: 5px;
+    display: inline-block;
+    width: 23%;
+}
+.btn-arr{
+	background-color: #4d626e;
+	border-style: solid;
+    border-color: red;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 5px;
+    border-radius: 50%;
+    width: 40px;
+	height: 30px;
+	cursor:pointer;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+.btn-arr:hover{
+    background-color: transparent;
+	box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.29); 
+	border-color:#06B6D4;
+	border-style: solid;
+    border-color: red;
+	}
+.material-icons, .fa-solid{
+    position: absolute;
+    margin-top: -12px;
+    margin-left: -11px;
+}
+.card-tabs{
+    color: white;
+    text-align: center;
+    font-size: 100%;
+    padding: 15px 0px;
+    background-color: #2D36F6;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.bagikan{
+    color: white;
+    text-align: left;
+    padding: 15px 0px;
+    background-color: #efefef;    
+    margin-top: 10px;
+    padding-left: 10px;
+}	
+	
+.awal{
+    text-align: left;
+    padding: 15px 0px;
+    background-color: #efefef;    
+    margin-top: 10px;
+    padding-left: 10px;
+	font-size: 100%;
+	font-family: 'times new roman';
+}
+	
+
+	
+table.cal_table{
+	border-collapse: collapse;
+	width:100%;
+}
+table td:hover{
+    background-color: #ddd !important;;
+    cursor:pointer;
+}
+table, th, td {
+	text-align:center !important;
+	color: #37474f;
+	padding: 7px 5px;
+}
+
+table.cal_table > tbody > tr > td:hover {
+	background-color: #fafafa;
+}
+th.day{
+	color: #2196f3;
+}
+div.card-head{
+	border-radius: 2px 2px 0px 0px;
+    text-align: center;
+    padding: 15px 0px; 
+    color: white;
+	background: linear-gradient(65deg,#f2709c, #ff9472);
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    border-radius: 10px 10px 0px 0px;	
+}
+div.card-head .card-title{
+	font-size:20px;
+}
+div.no-margin{
+	margin-bottom: 0px;
+	display: block;
+}
+
+span.det{
+	display:none; 
+}
+p.h-date{
+	font-size:20px;
+	margin: auto;
+	font-family: 'Amiri', serif !important;
+	margin: 0px 5px;
+}
+p.m-date{
+	font-size: 180%;
+    font-weight: bold;
+	margin: auto;
+}
+#setbulan{
+	text-align: center;
+    font-size: 90%;
+    padding: 15px 0px;
+    background-color: #B9BCFA;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 10px;
+}
+
+.list{
+    padding: 5px 10px;
+    background: #efefef;
+    margin-bottom: 5px;
+}
+
+.col-0 .m-date{
+	color: #f44336;
+}
+
+.col-5 .m-date{
+	color: #4caf50;
+}
+
+#output_primwuku img{
+	width:100%;
+}
+#output_primwuku p span{
+	font-weight:bold;
+}
+.collection{
+    margin-top:10px !important;
+}
+#go_year{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-color: #efefef; 
+	border: 1px solid #06B6D4;
+    color: #06B6D4;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  position: center;
+  max-height: 100%;
+  overflow: auto;
+  }
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+blockquote{
+    font-size: 100% !important;
+    padding: 10px 0px 10px 20px!important;
+}
+blockquote:before{
+    font-size:50px !important;
+    left: -5px !important;
+    top: -12px !important;
+}
+#sc{
+    font-size: 50%;
+    text-align: center;
+    margin-bottom: -10px 10px;
+}
+@media only screen and (max-width: 600px) {
+    table.cal_table {
+        font-size:80%;
+    }   
+}
+@media only screen and (max-width: 400px) {
+    table.cal_table {
+        font-size:70%;
+    }  
+    table td{
+        padding: 8px 0px;
+    }
+	.btn-arr{
+		width:30px;
+		height:30px;
+	}
+}
+
+.loncat {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+        justify-content: space-between;
+	    border-color:#ff0016;
+	    color: black;
+    }
+
+    .loncat li {
+        flex: 1;
+        padding: 5px;
+		border-color:#efefef;
+    }
+
+    .loncat li:last-child {
+        flex: 0.2;
+		border-color:#efefef;
+    }
+
+    .loncat select {
+        width: 100%;
+		height: 100%;
+		text-align: center;
+		background-color: #efefef;
+		border: 1px solid #06B6D4;
+	}	
+
+.card-footer{
+    text-align: center;
+    padding: 15px 0px; 
+    color: white;
+	background: linear-gradient(200deg,#24bb81 0,teal 56%,teal 130%);
+    margin-bottom: -10px;   
+    border-radius: 0px 0px 0px 0px;
+	font-family: "Courier New", monospace;	
+}
+.card-footer a {
+  color: yellow;
+}	
+	
+img.tengah {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.input-group {
+  display: flex;
+  align-content: stretch;
+}
+
+.input-group > input {
+  flex: 1 0 auto;
+}
+	
+.input-group-addon {
+  background: #eee;
+  border: 1px solid #ccc;
+  padding: 0.5em 1em;
+}	
+
+
+.prev-date{
+	background-color: #4d626e;
+	border-style: solid;
+    border-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 28px;
+	height: 25px;
+	cursor:pointer;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+.prev-date:hover{
+    background-color: #06B6D4;
+	box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.29); 
+	border-style: solid;
+    border-color: red;
+	}	
+	
+.next-date{
+	background-color: #4d626e;
+	border-style: solid;
+    border-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 28px;
+	height: 25px;
+	cursor:pointer;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+.next-date:hover{
+    background-color: #06B6D4;
+	box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.29); 
+	border-style: solid;
+    border-color: red;
+	}	
+		
+	
+</style>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5e5e579980c1220019d9d473&product=sop' async='async'></script>
+</head>
+<script type="text/javascript">
+	var _0xbe9a=["\x63\x65\x69\x6C","\x66\x6C\x6F\x6F\x72","\x4A\x61\x6E\x75\x61\x72\x79","\x46\x65\x62\x72\x75\x61\x72\x79","\x4D\x61\x72\x63\x68","\x41\x70\x72\x69\x6C","\x4D\x61\x79","\x4A\x75\x6E\x65","\x4A\x75\x6C\x79","\x41\x75\x67\x75\x73\x74","\x53\x65\x70\x74\x65\x6D\x62\x65\x72","\x4F\x63\x74\x6F\x62\x65\x72","\x4E\x6F\x76\x65\x6D\x62\x65\x72","\x44\x65\x63\x65\x6D\x62\x65\x72","\x4D\x75\x68\x61\x72\x72\x61\x6D","\x53\x61\x66\x61\x72","\x52\x61\x62\x69\x20\x41\x6C\x2D\x41\x77\x77\x61\x6C","\x52\x61\x62\x69\x20\x41\x6C\x2D\x54\x68\x61\x6E\x69","\x4A\x75\x6D\x61\x64\x61\x20\x41\x6C\x2D\x55\x6C\x61","\x4A\x75\x6D\x61\x64\x61\x20\x41\x6C\x2D\x54\x68\x61\x6E\x69","\x52\x61\x6A\x61\x62","\x53\x68\x61\x62\x61\x6E","\x52\x61\x6D\x61\x64\x61\x6E","\x53\x68\x61\x77\x77\x61\x6C","\x44\x68\x75\x6C\x20\x51\x61\x64\x61","\x44\x68\x75\x6C\x20\x48\x69\x6A\x6A\x61","\x4A\x61\x6E\x75\x61\x72\x69","\x46\x65\x62\x72\x75\x61\x72\x69","\x4D\x61\x72\x65\x74","\x4D\x65\x69","\x4A\x75\x6E\x69","\x4A\x75\x6C\x69","\x41\x67\x75\x73\x74\x75\x73","\x4F\x6B\x74\x6F\x62\x65\x72","\x44\x65\x73\x65\x6D\x62\x65\x72","\x52\x61\x62\x69\x27\x75\x6C\x20\x41\x77\x61\x6C","\x52\x61\x62\x69\x27\x75\x6C\x20\x41\x6B\x68\x69\x72","\x4A\x75\x6D\x61\x64\x69\x6C\x20\x41\x77\x61\x6C","\x4A\x75\x6D\x61\x64\x69\x6C\x20\x41\x6B\x68\x69\x72","\x53\x79\x61\x27\x62\x61\x6E","\x52\x61\x6D\x61\x64\x68\x61\x6E","\x53\x79\x61\x77\x61\x6C","\x44\x7A\x75\x6C\x20\x51\x61\x27\x64\x61\x68","\x44\x7A\x75\x6C\x20\x48\x69\x6A\x6A\x61\x68","\x53\x75\x72\x6F","\x53\x61\x70\x61\x72","\x4D\x75\x6C\x75\x64","\x42\x61\x27\x64\x61\x20\x4D\x75\x6C\x75\x64","\x52\x65\x6A\x65\x62","\x52\x75\x77\x61\x68","\x50\x6F\x73\x6F","\x44\x75\x6C\x6B\x61\x69\x64\x61\x68","\x42\x65\x73\x61\x72","\x54\x68\x75\x72\x73\x64\x61\x79","\x46\x72\x69\x64\x61\x79","\x53\x61\x74\x75\x72\x64\x61\x79","\x53\x75\x6E\x64\x61\x79","\x4D\x6F\x6E\x64\x61\x79","\x54\x75\x65\x73\x64\x61\x79","\x57\x65\x64\x6E\x65\x73\x64\x61\x79","\x41\x6C\x2D\x48\x61\x6D\x69\x73","\x41\x6C\x2D\x4A\x75\x6D\x27\x61","\x41\x73\x2D\x53\x61\x62\x74","\x41\x6C\x2D\x41\x68\x61\x64","\x41\x6C\x2D\x49\x74\x73\x6E\x61\x79\x6E\x61","\x41\x74\x73\x2D\x54\x73\x61\x6C\x61\x74\x73\x61\x27","\x41\x6C\x2D\x41\x72\x62\x61\x27\x61\x27","\x4B\x61\x6D\x69\x73","\x4A\x75\x6D\x61\x74","\x53\x61\x62\x74\x75","\x41\x68\x61\x64","\x53\x65\x6E\x69\x6E","\x53\x65\x6C\x61\x73\x61","\x52\x61\x62\x75","\x57\x61\x67\x65","\x4B\x6C\x69\x77\x6F\x6E","\x4C\x65\x67\x69","\x50\x61\x68\x69\x6E\x67","\x50\x6F\x6E","\x67\x65\x74\x44\x61\x74\x65","\x67\x65\x74\x4D\x6F\x6E\x74\x68","\x67\x65\x74\x59\x65\x61\x72","\x59\x61\x75\x6D\x20","\x30","\x2C\x20","\x20","\x20\x48","\x20\x2F\x20","\x20\x48\x20\x2F\x20","\x20\x4A","\x20\x2C","\x77\x72\x69\x74\x65"];var iTanggalM=0;var iTanggalH=0;var iBulanM=0;var iBulanH=0;var iTahunM=0;var iTahunH=0;var iTahunJ=0;function intPart(_0xe909x9){return (_0xe909x9<  -0.0000001?Math[_0xbe9a[0]](_0xe909x9- 0.0000001):Math[_0xbe9a[1]](_0xe909x9+ 0.0000001))}function hitung_Hijriah(_0xe909xb,_0xe909xc,_0xe909xd){mPart= (_0xe909xc- 13)/ 12;jd= intPart((1461* (_0xe909xd+ 4800+ intPart(mPart)))/ 4)+ intPart((367* (_0xe909xc- 1- 12* (intPart(mPart))))/ 12)- intPart((3* (intPart((_0xe909xd+ 4900+ intPart(mPart))/ 100)))/ 4)+ _0xe909xb- 32075;l= jd- 1948440+ 10632;n= intPart((l- 1)/ 10631);l= l- 10631* n+ 354;j= (intPart((10985- l)/ 5316))* (intPart((50* l)/ 17719))+ (intPart(l/ 5670))* (intPart((43* l)/ 15238));l= l- (intPart((30- j)/ 15))* (intPart((17719* j)/ 50))- (intPart(j/ 16))* (intPart((15238* j)/ 43))+ 29;iBulanH= intPart((24* l)/ 709);iTanggalH= l- intPart((709* iBulanH)/ 24);tambahan= 0;iTanggalH= iTanggalH+ tambahan;iTahunH= 30* n+ j- 30;iBulanH-= 1}function hitung_Tanggal(_0xe909xf){var _0xe909x10= new Array(_0xbe9a[2],_0xbe9a[3],_0xbe9a[4],_0xbe9a[5],_0xbe9a[6],_0xbe9a[7],_0xbe9a[8],_0xbe9a[9],_0xbe9a[10],_0xbe9a[11],_0xbe9a[12],_0xbe9a[13]);var _0xe909x11= new Array(_0xbe9a[14],_0xbe9a[15],_0xbe9a[16],_0xbe9a[17],_0xbe9a[18],_0xbe9a[19],_0xbe9a[20],_0xbe9a[21],_0xbe9a[22],_0xbe9a[23],_0xbe9a[24],_0xbe9a[25]);var _0xe909x12= new Array(_0xbe9a[26],_0xbe9a[27],_0xbe9a[28],_0xbe9a[5],_0xbe9a[29],_0xbe9a[30],_0xbe9a[31],_0xbe9a[32],_0xbe9a[10],_0xbe9a[33],_0xbe9a[12],_0xbe9a[34]);var _0xe909x13= new Array(_0xbe9a[14],_0xbe9a[15],_0xbe9a[35],_0xbe9a[36],_0xbe9a[37],_0xbe9a[38],_0xbe9a[20],_0xbe9a[39],_0xbe9a[40],_0xbe9a[41],_0xbe9a[42],_0xbe9a[43]);var _0xe909x14= new Array(_0xbe9a[44],_0xbe9a[45],_0xbe9a[46],_0xbe9a[47],_0xbe9a[37],_0xbe9a[38],_0xbe9a[48],_0xbe9a[49],_0xbe9a[50],_0xbe9a[41],_0xbe9a[51],_0xbe9a[52]);var _0xe909x15= new Array(_0xbe9a[53],_0xbe9a[54],_0xbe9a[55],_0xbe9a[56],_0xbe9a[57],_0xbe9a[58],_0xbe9a[59]);var _0xe909x16= new Array(_0xbe9a[60],_0xbe9a[61],_0xbe9a[62],_0xbe9a[63],_0xbe9a[64],_0xbe9a[65],_0xbe9a[66]);var _0xe909x17= new Array(_0xbe9a[67],_0xbe9a[68],_0xbe9a[69],_0xbe9a[70],_0xbe9a[71],_0xbe9a[72],_0xbe9a[73]);var _0xe909x18= new Array(_0xbe9a[74],_0xbe9a[75],_0xbe9a[76],_0xbe9a[77],_0xbe9a[78],_0xbe9a[74],_0xbe9a[75]);now=  new Date();iTanggalM= now[_0xbe9a[79]]();iBulanM= now[_0xbe9a[80]]();iTahunM= now[_0xbe9a[81]]();if(iTahunM< 1900){iTahunM+= 1900};hitung_Hijriah(iTanggalM,iBulanM,iTahunM);hr= Date.UTC(iTahunM,iBulanM,iTanggalM,0,0,0)/ 1000/ 60/ 60/ 24;iTahunJ= iTahunH+ 512;sHariE= _0xe909x15[hr% 7];sHariH= _0xbe9a[82]+ _0xe909x16[hr% 7];sHariI= _0xe909x17[hr% 7];sHariJ= _0xe909x18[hr% 5];sBulanE= _0xe909x10[iBulanM];sBulanH= _0xe909x11[iBulanH];sBulanI= _0xe909x12[iBulanM];sBulanHI= _0xe909x13[iBulanH];sBulanJ= _0xe909x14[iBulanH];zTanggalM= iTanggalM< 10?_0xbe9a[83]+ iTanggalM:iTanggalM;zTanggalH= iTanggalH< 10?_0xbe9a[83]+ iTanggalH:iTanggalH;iBulanM+= 1;iBulanH+= 1;zBulanM= iBulanM< 10?_0xbe9a[83]+ iBulanM:iBulanM;zBulanH= iBulanH< 10?_0xbe9a[83]+ iBulanH:iBulanH;switch(_0xe909xf){case 2:{sDate= sHariE+ _0xbe9a[84]+ iTanggalM+ _0xbe9a[85]+ sBulanE+ _0xbe9a[85]+ iTahunM;break};case 3:{sDate= sHariI+ _0xbe9a[85]+ sHariJ+ _0xbe9a[84]+ iTanggalM+ _0xbe9a[85]+ sBulanI+ _0xbe9a[85]+ iTahunM;break};case 4:{sDate= sHariI+ _0xbe9a[85]+ sHariJ+ _0xbe9a[84]+ iTanggalH+ _0xbe9a[85]+ sBulanJ+ _0xbe9a[85]+ iTahunJ;break};case 5:{sDate= sHariH+ _0xbe9a[84]+ iTanggalH+ _0xbe9a[85]+ sBulanH+ _0xbe9a[85]+ iTahunH+ _0xbe9a[86];break};case 6:{sDate= sHariI+ _0xbe9a[84]+ iTanggalH+ _0xbe9a[85]+ sBulanHI+ _0xbe9a[85]+ iTahunH+ _0xbe9a[86];break};case 7:{sDate= sHariI+ _0xbe9a[85]+ sHariJ+ _0xbe9a[84]+ iTanggalM+ _0xbe9a[85]+ sBulanI+ _0xbe9a[85]+ iTahunM+ _0xbe9a[87]+ iTanggalH+ _0xbe9a[85]+ sBulanHI+ _0xbe9a[85]+ iTahunH+ _0xbe9a[88]+ iTanggalH+ _0xbe9a[85]+ sBulanJ+ _0xbe9a[85]+ iTahunJ+ _0xbe9a[89];break};case 11:{sDate= iTanggalM+ _0xbe9a[85]+ sBulanI+ _0xbe9a[85]+ iTahunM+ _0xbe9a[90]+ sHariI+ _0xbe9a[85]+ sHariJ+ _0xbe9a[87]+ iTanggalH+ _0xbe9a[85]+ sBulanHI+ _0xbe9a[85]+ iTahunH+ _0xbe9a[88]+ iTanggalH+ _0xbe9a[85]+ sBulanJ+ _0xbe9a[85]+ iTahunJ+ _0xbe9a[89];break};case 12:{sDate= sHariI+ _0xbe9a[85]+ sHariJ+ _0xbe9a[85];break};case 13:{sDate= iTanggalH+ _0xbe9a[85]+ sBulanHI+ _0xbe9a[85]+ iTahunH+ _0xbe9a[86];break};case 14:{sDate= iTanggalH+ _0xbe9a[85]+ sBulanJ+ _0xbe9a[85]+ iTahunJ+ _0xbe9a[89];break};case 15:{sDate= iTanggalM+ _0xbe9a[85]+ sBulanI+ _0xbe9a[85]+ iTahunM+ _0xbe9a[85];break};case 8:{sDate= sHariE+ _0xbe9a[85]+ sHariJ+ _0xbe9a[84]+ iTanggalH+ _0xbe9a[85]+ sBulanJ+ _0xbe9a[85]+ iTahunJ;break};default:{sDate= sHariI+ _0xbe9a[85]+ sHariJ+ _0xbe9a[84]+ iTanggalM+ _0xbe9a[85]+ sBulanI+ _0xbe9a[85]+ iTahunM;break}};return (sDate)}function tulis_Tanggal(_0xe909xf){sDate= hitung_Tanggal(_0xe909xf);document[_0xbe9a[91]](sDate)}
+	</script>	
+
+
+<body>
+<!-- Navbar Section Start -->
+    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="index.html"><img
+                src="https://cdn.jsdelivr.net/gh/iwantama2/logo@main/android-chrome-192x192.png"
+                alt="logo"
+                class="relative z-[99] mx-auto max-w-full"
+               style="width: 50px;height: 50px;border-radius: 100%;" /></a>           
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-white lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a href="index.html" class="mx-8 flex py-2 text-sm text-dark group-hover:text-primary dark:text-white lg:rounded-full lg:bg-primary lg:px-5 lg:text-white lg:transition lg:duration-300 lg:ease-in-out lg:group-hover:bg-cyan-400 lg:group-hover:text-white">Beranda</a></li>
+                <li class="group">
+                  <a href="cekweton.html" class="mx-8 flex py-2 text-sm text-dark group-hover:text-primary dark:text-white lg:rounded-full lg:bg-primary lg:px-5 lg:text-white lg:transition lg:duration-300 lg:ease-in-out lg:group-hover:bg-cyan-400 lg:group-hover:text-white">Cek Weton Kelahiran</a>
+                </li>
+                <li class="group">
+                  <a
+                    href="hijriah.html"
+                    class="mx-8 flex py-2 text-sm text-dark group-hover:text-primary dark:text-white lg:rounded-full lg:bg-primary lg:px-5 lg:text-white lg:transition lg:duration-300 lg:ease-in-out lg:group-hover:bg-cyan-400 lg:group-hover:text-white">Kalender Hijriyah</a>
+                </li>
+                <li class="group">
+                  <a
+                    href="primbon.html"
+                    class="mx-8 flex py-2 text-sm text-dark group-hover:text-primary dark:text-white lg:rounded-full lg:bg-primary lg:px-5 lg:text-white lg:transition lg:duration-300 lg:ease-in-out lg:group-hover:bg-cyan-400 lg:group-hover:text-white">Primbon Jodoh</a>
+                </li>
+                <li class="group">
+                  <a href="nikah.html" class="mx-8 flex py-2 text-sm text-dark group-hover:text-primary dark:text-white lg:rounded-full lg:bg-primary lg:px-5 lg:text-white lg:transition lg:duration-300 lg:ease-in-out lg:group-hover:bg-cyan-400 lg:group-hover:text-white">Hari Baik Menikah</a>
+                </li>
+                <li class="group">
+                  <a href="index.html" class="mx-8 flex py-2 text-sm text-dark group-hover:text-primary dark:text-white lg:rounded-full lg:bg-primary lg:px-5 lg:text-white lg:transition lg:duration-300 lg:ease-in-out lg:group-hover:bg-cyan-400 lg:group-hover:text-white">Kalender Jawa</a>
+                </li>
+            </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar Section End -->	
+<section id="card" class="pt-36 dark:bg-dark">
+         </section>	
+	
+	
+	 <!-- Waktu Sholat -->
+  <div class="awal"><p class="text-sm"><iconify-icon icon="ic:baseline-add-circle"></iconify-icon>  
+	  Klik pada Kota Untuk melihat   
+	  <span style="display: inline-flex; flex-wrap: wrap; align-items: left; justify-content: center; cursor:pointer;" data-bs-toggle="modal" data-bs-target="#daftarKota"><b style="color:red;">Jadwal Sholat di Kota lainnya</b></span></p>
+	</div>		
+		<div class="card">
+      <div class="card-head">
+          <p style="font-weight: 600;">Jadwal Sholat Untuk Daerah 
+          <b><span style="display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: center; cursor:
+            pointer;" data-bs-toggle="modal" data-bs-target="#daftarKota">
+            <span class="kota-pilihan" style="color: #00FFA5; font-weight: 600;"></span> <span class="fa fa-sort-desc"></span>           
+			  </span></b></p>
+		 <div class="no-margin"> 
+        <div class="tanggal-wrapper" style="display: flex; justify-content: center; align-items: center;">
+		<div class="col-s4">	
+          <button class="prev-date btn-arr" style="cursor: pointer;"><i class="material-icons">chevron_left</i></button>
+			</div>	
+          <div class="tanggal mx-4">
+            <span class="masehi mb-1" ></span>
+			  <!--<p class="hijriyah"></p>-->
+          </div>
+		<div class="col-s4">	
+          <button class="next-date btn-arr" style="cursor: pointer;"><i class="material-icons">chevron_right</i></button>
+			</div>
+		</div>
+      </div>
+		</div>
+		
+		<div class="card-content">
+		<table class="cal_table" border="1" style="overflow:auto">
+		<tbody>	     
+          <td><div class="jadwal imsak">
+            <div class="col-2">
+              <b class="m-0">Imsak</b><img src="https://jurnals.com/hijriyah/images/imsak.webp" class="tengah" alt="Subuh" width="30px" height="30px">
+              <b class="waktu m-0" >-</b>
+            </div>            
+			  </div></td>
+			<td><div class="jadwal subuh">
+            <div class="col-2">
+              <b class="m-0">Subuh</b><img src="https://jurnals.com/hijriyah/images/subuh.webp" class="tengah" alt="Subuh" width="30px" height="30px">
+                <b class="waktu m-0" >-</b>
+            </div>            
+				</div></td>
+          <td><div class="jadwal terbit">
+            <div class="col-2">
+              <b class="m-0">Terbit</b><img src="https://jurnals.com/hijriyah/images/terbit.webp" class="tengah" alt="Terbit" width="30px" height="30px">
+              <b class="waktu m-0" >-</b>
+            </div>           
+          </div></td>
+          <td><div class="jadwal dhuha">
+            <div class="col-2">
+              <b class="m-0">Dhuha</b><img src="https://jurnals.com/hijriyah/images/dhuha.webp" class="tengah" alt="Dhuha" width="30px" height="30px">
+              <b class="waktu m-0" >-</b>
+            </div>            
+          </div></td>
+          <td><div class="jadwal dzuhur">
+            <div class="col-2">
+              <b class="m-0">Dzuhur</b><img src="https://jurnals.com/hijriyah/images/dzuhur.webp" class="tengah" alt="Dzuhur" width="30px" height="30px">
+              <b class="waktu m-0" >-</b>
+            </div>            
+          </div></td>
+          <td><div class="jadwal ashar">
+            <div class="col-2">
+              <b class="m-0">Ashar</b><img src="https://jurnals.com/hijriyah/images/ashar.webp" class="tengah" alt="Ashar" width="30px" height="30px">
+              <b class="waktu m-0" >-</b>
+            </div>            
+          </div></td>
+          <td><div class="jadwal maghrib">
+            <div class="col-2">
+              <b class="m-0">Maghrib</b><img src="https://jurnals.com/hijriyah/images/maghrib.webp" class="tengah" alt="Maghrib" width="30px" height="30px">
+              <b class="waktu m-0" >-</b>
+            </div>            
+          </div></td>
+          <td><div class="jadwal isya">
+            <div class="col-2">
+              <b class="m-0">Isya'</b><img src="https://jurnals.com/hijriyah/images/isya'.webp" class="tengah" alt="isya" width="30px" height="30px">
+              <b class="waktu m-0" >-</b>
+            </div>            
+          </div></td>
+			</tbody>
+			</table>
+			</div></div>	
+
+
+   <!-- Modal Waktu Sholat -->
+  <div class="modal fade" id="daftarKota" tabindex="-1" aria-labelledby="daftarKotaLabel" aria-hidden="true"
+    style="color: var(--blue2);">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="daftarKotaLabel">Daftar Kota</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div id="daftar-kota" class="modal-body daftar-kota">
+          <div class="input-kota fuzzy-search mb-3">
+            <input class="px-3 py-2 input-group" type="text" onclick="this.select()"
+              style="background-color: var(--white); border: 1px solid var(--blue1); border-radius: 3px;"
+              placeholder="Cari Nama Kota / Daerah...">
+          </div>
+          <div class="daftar list px-2" style="letter-spacing: 1px; max-height: 40vh; overflow: auto;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Waktu Sholat -->
+<script src="https://jurnals.com/hijriyah/js/list.js"></script>
+<script src="https://jurnals.com/hijriyah/js/hijri-date.js"></script>
+<script src="https://jurnals.com/hijriyah/js/calendar.js"></script>
+<script src="https://jurnals.com/hijriyah/js/index.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>	
+	
+<div class="kalender_hariini">
+		<div class="card">
+			<div class="card-head">
+              <div id="hari_ini"><b>Kalender Hijriyah Hari Ini</b></div>		       
+         <div style="margin:0px" id="title-date">(Jam <span id="jam"></span>)
+            </div></div>
+			<div class="card-content">
+				<table class="cal_table" border="1">
+					<tbody>
+                      <tr>
+							<td>Masehi</td>
+							<td><script type="text/javascript">tulis_Tanggal(15);</script></td>
+						</tr>
+						<tr>
+							<td>Pasaran</td>
+							<td><script type="text/javascript">tulis_Tanggal(12);</script></td>
+						</tr>
+						<tr>
+							<td>Tahun Hijriyah</td>
+							<td><script type="text/javascript">tulis_Tanggal(13);</script></td>
+						</tr>
+						<tr>
+							<td>Tahun Jawa</td>
+							<td><script type="text/javascript">tulis_Tanggal(14);</script></td>
+						</tr>						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>	
+	
+	
+	
+
+<div class="calender">	
+			<div class="card">
+				<div class="card-head">
+					 <div class="no-margin">
+						<div class="col-s3">
+							<button onclick="prev_year()" class="btn-arr"><i class="material-icons">fast_rewind</i></button>
+							<button onclick="prev()" class="btn-arr"><i class="material-icons">chevron_left</i></button>
+						</div>
+						<div class="col-s6">
+							<span class="card-title"><b><span id='month'></span> <span id='year'></span></b></span>
+						</div>
+						<div class="col-s3">
+							<button onclick="next()" class="btn-arr"><i class="material-icons">chevron_right</i></button>
+							<button onclick="next_year()" class="btn-arr"><i class="material-icons">fast_forward</i></button>
+						</div>
+					</div>
+				</div>
+				<div id='setbulan'></div>
+				<div class="card-content" style="overflow:auto">
+					<div id="calendar" class="calendar-java">
+
+						<table class="cal_table tbl-hijr" border='1'>
+						  <tbody>
+							<tr class="row-days">
+								<th class="day" style="color: #f44336;">Min</th>
+								<th class="day">Sen</th>
+								<th class="day">Sel</th>
+								<th class="day">Rab</th>
+								<th class="day">Kam</th> 
+								<th class="day" style="color: #4caf50;">Jum</th>
+								<th class="day">Sab</th>
+							</tr>
+							<tr class="row-0">
+								<td onclick='detail(this)' class="col-0"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-1"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-2"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-3"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-4"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-5"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-6"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+							</tr>
+							<tr class="row-1">
+								<td onclick='detail(this)' class="col-0"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-1"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-2"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-3"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-4"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-5"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-6"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+							</tr>
+							<tr class="row-2">
+								<td onclick='detail(this)' class="col-0"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-1"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-2"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-3"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-4"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-5"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-6"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+							</tr>
+							<tr class="row-3">
+								<td onclick='detail(this)' class="col-0"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-1"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-2"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-3"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-4"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-5"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-6"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+							</tr>
+							<tr class="row-4">
+								<td onclick='detail(this)' class="col-0"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-1"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-2"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-3"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-4"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-5"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-6"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+							</tr>
+							<tr class="row-5">
+								<td onclick='detail(this)' class="col-0"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-1"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-2"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-3"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-4"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-5"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+								<td onclick='detail(this)' class="col-6"><p class="m-date"></p><p class="h-date"></p><span class='det'></span></td>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+				
+				
+				
+				<div class="card-tabs">
+					Hari Libur
+				</div>
+				<div>
+					<div id="harilibur">
+						<ul class="collection">
+						</ul>
+					</div>
+				</div>
+				<div class="card-tabs">
+					Indikator Warna Puasa
+				</div>
+				<div>
+					<div id="puasa">
+						<ul class="collection">
+							<li class='collection-item'><span style="background:#ff9800">&nbsp;&nbsp;&nbsp;</span> Puasa Senin Kamis</li>
+							<li class='collection-item'><span style="background:#673ab7">&nbsp;&nbsp;&nbsp;</span> Puasa Ayyamul Bidh, tiga hari tiap pertengahan bulan hijriah (13, 14, 15)</li>
+							<li class='collection-item'><span style="background:#76ff03">&nbsp;&nbsp;&nbsp;</span> Puasa Ramadan</li>
+							<li class='collection-item'><span style="background:#64b5f6">&nbsp;&nbsp;&nbsp;</span> Puasa Arafah, tiap 9 dzulhijjah (bagi yang tidak menunaikan haji)</li>
+							<li class='collection-item'><span style="background:#f06292">&nbsp;&nbsp;&nbsp;</span> Puasa 'Asyura dan Tasu'a, tiap 10 muharram dan satu hari sebelum atau sesudahnya</li>
+							<li class='collection-item'><span style="background:#b71c1c">&nbsp;&nbsp;&nbsp;</span> Haram Berpuasa. Idul fitri, idul adha dan hari tasyrik (11, 12, 13 dzulhijjah)</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+	</div>
+	
+		<div class="calender">
+			<div class="card">
+				<div class="card-head">
+					<span>Loncat ke</span>
+				</div>
+				<ul class="loncat">
+                    <li>
+                        <select name="lbulan" id="list-month">
+                         </select>
+                    </li>
+                    <li>
+                        <select name="ltahun" id="list-year">
+                                                            <option value="1975">1975</option>                                                            <option value="1976">1976</option>                                                            <option value="1977">1977</option>                                                            <option value="1978">1978</option>                                                            <option value="1979">1979</option>                                                            <option value="1980">1980</option>                                                            <option value="1981">1981</option>                                                            <option value="1982">1982</option>                                                            <option value="1983">1983</option>                                                            <option value="1984">1984</option>                                                            <option value="1985">1985</option>                                                            <option value="1986">1986</option>                                                            <option value="1987">1987</option>                                                            <option value="1988">1988</option>                                                            <option value="1989">1989</option>                                                            <option value="1990">1990</option>                                                            <option value="1991">1991</option>                                                            <option value="1992">1992</option>                                                            <option value="1993">1993</option>                                                            <option value="1994">1994</option>                                                            <option value="1995">1995</option>                                                            <option value="1996">1996</option>                                                            <option value="1997">1997</option>                                                            <option value="1998">1998</option>                                                            <option value="1999">1999</option>                                                            <option value="2000">2000</option>                                                            <option value="2001">2001</option>                                                            <option value="2002">2002</option>                                                            <option value="2003">2003</option>                                                            <option value="2004">2004</option>                                                            <option value="2005">2005</option>                                                            <option value="2006">2006</option>                                                            <option value="2007">2007</option>                                                            <option value="2008">2008</option>                                                            <option value="2009">2009</option>                                                            <option value="2010">2010</option>                                                            <option value="2011">2011</option>                                                            <option value="2012">2012</option>                                                            <option value="2013">2013</option>                                                            <option value="2014">2014</option>                                                            <option value="2015">2015</option>                                                            <option value="2016">2016</option>                                                            <option value="2017">2017</option>                                                            <option value="2018">2018</option>                                                            <option value="2019">2019</option>                                                            <option value="2020">2020</option>                                                            <option value="2021">2021</option>                                                            <option value="2022">2022</option>                                                            <option value="2023" selected>2023</option>                                                            <option value="2024">2024</option>                                                            <option value="2025">2025</option>                                                            <option value="2026">2026</option>                                                            <option value="2027">2027</option>                                                            <option value="2028">2028</option>                                                            <option value="2029">2029</option>                                                            <option value="2030">2030</option>                                                            <option value="2031">2031</option>                                                            <option value="2032">2032</option>                                                            <option value="2033">2033</option>                                                            <option value="2034">2034</option>                                                            <option value="2035">2035</option>                                                            <option value="2036">2036</option>                                                            <option value="2037">2037</option>                                                            <option value="2038">2038</option>                                                            <option value="2039">2039</option>                                                            <option value="2040">2040</option>                                                            <option value="2041">2041</option>                                                            <option value="2042">2042</option>                                                            <option value="2043">2043</option>                                                            <option value="2044">2044</option>                                                            <option value="2045">2045</option>                                                            <option value="2046">2046</option>                                                            <option value="2047">2047</option>                                                            <option value="2048">2048</option>                                                            <option value="2049">2049</option>                                                            <option value="2050">2050</option>                                                    </select>
+                    </li>
+                    <li>
+						<button id="go_year" class="tombol  btn-loncat-date"><b>LIHAT</b></button>
+                    </li>
+                </ul>
+		</div>			
+			<p id='sc' style='display:none'>Developed by <a href='#'>kenthus</a></p>
+			<p id='sc'>Author by Siap Ngoding</p>
+
+<!-- Modal Structure -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+		<span class="close">&times;</span>
+		<p id='textmodal'></p>
+		<br>
+		<span id='wuku_hide' style='display:none'></span>
+		<div id="output_primwuku"></div>
+	</div>
+</div>
+
+ <!-- ShareThis BEGIN -->
+    <div class="bagikan"><div class="sharethis-inline-share-buttons"></div></div>
+    <!-- ShareThis END -->			
+			
+
+			
+		<div class="card-footer">
+	<p style="font-size: 1em">Author By ❤️ Siap Ngoding, ID</p>
+<font color="yellow" style="font-size: 0.7em"><a href="https://trakteer.id/agustine.yaya/tip?quantity=1">Click Here <iconify-icon icon="flat-color-icons:donate"></iconify-icon> to Donate</a></font>
+	  </div>
+	
+<script>
+$("#see_more").click(function(){
+	$(this).parent().find("tr").show();
+	$(this).hide();
+});
+	
+for ( var w = 1975; w < 2051; w++ ){
+	$("#list-year").append("<option value='"+w+"'>"+w+"</option>");
+}
+	
+</script>
+
+
+<script type="text/javascript">
+var _0xb342=["\x53\x75\x72\x61","\x53\x61\x70\x61\x72","\x73\x74\x79\x6C\x65","\x23\x66\x34\x34\x33\x33\x36\x20","\x20\x2E\x64\x65\x74","\x53\x61\x66\x61\x72","\x32\x70\x78\x20\x73\x6F\x6C\x69\x64\x20\x23\x66\x30\x36\x32\x39\x32","\x70\x61\x64\x53\x74\x61\x72\x74","\x4D\x69\x6E\x67\x67\x75","\x67\x65\x74\x46\x75\x6C\x6C\x59\x65\x61\x72","\x61\x62\x73","\x20\x3A\x20\x4B\x65\x6E\x61\x69\x6B\x61\x6E\x20\x49\x73\x61\x20\x41\x6C\x2D\x4D\x61\x73\x69\x68\x3C\x2F\x73\x70\x61\x6E\x3E\x3C\x61\x20\x68\x72\x65\x66\x3D\x27\x23\x21\x27\x20\x63\x6C\x61\x73\x73\x3D\x27\x73\x65\x63\x6F\x6E\x64\x61\x72\x79\x2D\x63\x6F\x6E\x74\x65\x6E\x74\x27\x3E\x3C\x2F\x61\x3E\x3C\x2F\x6C\x69\x3E","\x73\x6C\x6F\x77","\x4F\x6B\x74\x6F\x62\x65\x72","\x4A\x75\x6D\x61\x64\x69\x6C\x20\x61\x77\x61\x6C","\x42\x61\x6B\x64\x61\x20\x4D\x75\x6C\x75\x64","\x23\x63\x61\x6C\x65\x6E\x64\x61\x72","\x54\x61\x68\x75\x6E\x20\x42\x61\x72\x75\x20\x49\x6D\x6C\x65\x6B\x3B","\x53\x61\x77\x61\x6C","\x65\x6D\x70\x74\x79","\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x27\x63\x6F\x6C\x6C\x65\x63\x74\x69\x6F\x6E\x2D\x69\x74\x65\x6D\x27\x3E\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x27\x74\x69\x74\x6C\x65\x27\x3E","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x41\x67\x75\x73\x74\x75\x73","\x20\x3A\x20\x54\x61\x68\x75\x6E\x20\x42\x61\x72\x75\x20\x49\x6D\x6C\x65\x6B\x3C\x2F\x73\x70\x61\x6E\x3E\x3C\x61\x20\x68\x72\x65\x66\x3D\x27\x23\x21\x27\x20\x63\x6C\x61\x73\x73\x3D\x27\x73\x65\x63\x6F\x6E\x64\x61\x72\x79\x2D\x63\x6F\x6E\x74\x65\x6E\x74\x27\x3E\x3C\x2F\x61\x3E\x3C\x2F\x6C\x69\x3E","\x2E\x63\x61\x6C\x5F\x74\x61\x62\x6C\x65\x20\x74\x62\x6F\x64\x79\x20\x74\x72\x20\x74\x64\x20\x70","\x50\x75\x61\x73\x61\x20\x41\x73\x79\x75\x72\x61\x20","\x3C\x6C\x69\x20\x63\x6C\x61\x73\x73\x3D\x27\x63\x6F\x6C\x6C\x65\x63\x74\x69\x6F\x6E\x2D\x69\x74\x65\x6D\x27\x3E\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x27\x74\x69\x74\x6C\x65\x27\x3E\x54\x69\x64\x61\x6B\x20\x61\x64\x61\x20\x68\x61\x72\x69\x20\x6C\x69\x62\x75\x72\x3C\x2F\x73\x70\x61\x6E\x3E\x3C\x61\x20\x68\x72\x65\x66\x3D\x27\x23\x21\x27\x20\x63\x6C\x61\x73\x73\x3D\x27\x73\x65\x63\x6F\x6E\x64\x61\x72\x79\x2D\x63\x6F\x6E\x74\x65\x6E\x74\x27\x3E\x3C\x2F\x61\x3E\x3C\x2F\x6C\x69\x3E","\x52\x61\x62\x69\x75\x6C\x20\x61\x77\x61\x6C","\x32\x70\x78\x20\x73\x6F\x6C\x69\x64\x20\x23\x36\x37\x33\x61\x62\x37","\x4E\x6F\x76\x65\x6D\x62\x65\x72","\x5A\x75\x6C\x68\x69\x6A\x61\x68","\x62\x6C\x75\x65\x20\x6C\x69\x67\x68\x74\x65\x6E\x2D\x35","\x74\x65\x78\x74\x43\x6F\x6E\x74\x65\x6E\x74","\x70\x61\x64\x64\x69\x6E\x67\x54\x6F\x70","\x32\x70\x78\x20\x73\x6F\x6C\x69\x64\x20\x23\x66\x66\x39\x38\x30\x30","\x52\x75\x77\x61\x68","\x68\x69\x6A\x72\x69\x54\x6F\x47\x72\x65\x67\x6F\x72\x69\x61\x6E","\x3B\x48\x69\x6A\x72\x69\x79\x61\x68\x20\x3A\x20","\x53\x65\x70\x74\x65\x6D\x62\x65\x72","\x3C\x2F\x6F\x70\x74\x69\x6F\x6E\x3E","\x64\x61\x79","\x50\x6F\x6E","\x3C\x2F\x73\x70\x61\x6E\x3E\x3C\x61\x20\x68\x72\x65\x66\x3D\x27\x23\x21\x27\x20\x63\x6C\x61\x73\x73\x3D\x27\x73\x65\x63\x6F\x6E\x64\x61\x72\x79\x2D\x63\x6F\x6E\x74\x65\x6E\x74\x27\x3E\x3C\x2F\x61\x3E\x3C\x2F\x6C\x69\x3E","\x23\x68\x61\x72\x69\x6C\x69\x62\x75\x72\x20\x2E\x63\x6F\x6C\x6C\x65\x63\x74\x69\x6F\x6E\x2D\x69\x74\x65\x6D","\x53\x79\x61\x77\x61\x6C","\x67\x65\x74\x44\x61\x79","\x57\x61\x66\x61\x74\x20\x49\x73\x61\x20\x41\x6C\x2D\x4D\x61\x73\x69\x68\x3B","\x44\x65\x73\x65\x6D\x62\x65\x72","\x4A\x75\x6D\x61\x64\x69\x6C\x20\x61\x6B\x68\x69\x72","\x20\x48\x3B\x50\x61\x73\x61\x72\x61\x6E\x20\x3A\x20","\x48\x61\x72\x61\x6D\x20\x62\x65\x72\x70\x75\x61\x73\x61\x20\x2D\x20\x48\x61\x72\x69\x20\x54\x61\x73\x79\x72\x69\x6B\x20","\x63\x73\x73","\x4B\x61\x6D\x69\x73","\x32\x70\x78\x20\x73\x6F\x6C\x69\x64\x20\x23\x36\x34\x62\x35\x66\x36","\x20\x2E\x63\x6F\x6C\x2D","\x68\x32\x2E\x74\x69\x74\x6C\x65\x2D\x68\x69\x6A\x72","\x32\x70\x78\x20\x73\x6F\x6C\x69\x64\x20\x23\x62\x37\x31\x63\x31\x63","\x31\x39\x33\x38\x2F\x31\x2F\x31","\x62\x6F\x72\x64\x65\x72\x54\x6F\x70","\x4A\x75\x6D\x61\x64\x69\x6C\x61\x77\x61\x6C","\x50\x75\x61\x73\x61\x20\x41\x79\x79\x61\x6D\x75\x6C\x20\x42\x69\x64\x68\x20","\x50\x75\x61\x73\x61\x20\x41\x72\x61\x66\x61\x68\x20","\x67\x65\x74\x4D\x6F\x6E\x74\x68","\x53\x65\x6C\x61\x73\x61","\x4A\x61\x6E\x75\x61\x72\x69","\x4A\x75\x6D\x27\x61\x74","\x57\x61\x67\x65","\x2E\x63\x61\x6C\x5F\x74\x61\x62\x6C\x65\x20\x74\x62\x6F\x64\x79\x20\x74\x72\x20\x74\x64\x20\x73\x70\x61\x6E","\x20\x2E\x68\x2D\x64\x61\x74\x65","\x72\x65\x6D\x6F\x76\x65","\x4D\x65\x69","\x5A\x75\x6C\x6B\x61\x69\x64\x61\x68","\x69\x6E\x63\x6C\x75\x64\x65\x73","\x2E\x68\x2D\x64\x61\x74\x65","\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64","\x6C\x65\x6E\x67\x74\x68","\x61\x70\x70\x65\x6E\x64","\x52\x61\x62\x75","\x23\x68\x61\x72\x69\x6C\x69\x62\x75\x72\x20\x2E\x63\x6F\x6C\x6C\x65\x63\x74\x69\x6F\x6E","\x6A\x6F\x69\x6E","\x20\x3A\x20\x57\x61\x66\x61\x74\x20\x49\x73\x61\x20\x41\x6C\x2D\x4D\x61\x73\x69\x68\x3C\x2F\x73\x70\x61\x6E\x3E\x3C\x61\x20\x68\x72\x65\x66\x3D\x27\x23\x21\x27\x20\x63\x6C\x61\x73\x73\x3D\x27\x73\x65\x63\x6F\x6E\x64\x61\x72\x79\x2D\x63\x6F\x6E\x74\x65\x6E\x74\x27\x3E\x3C\x2F\x61\x3E\x3C\x2F\x6C\x69\x3E","\x68\x69\x64\x65","\x4A\x75\x6D\x61\x74","\x4D\x75\x6C\x75\x64","\x67\x72\x65\x67\x6F\x72\x69\x61\x6E\x54\x6F\x48\x69\x6A\x72\x69","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x4A\x75\x6E\x69","\x53\x61\x62\x74\x75","\x50\x61\x68\x69\x6E\x67","\x32\x70\x78\x20\x73\x6F\x6C\x69\x64\x20\x23\x37\x36\x66\x66\x30\x33","\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x63\x6F\x6C\x6F\x72","\x79\x65\x61\x72","\x53\x65\x6E\x69\x6E","\x52\x61\x62\x69\x75\x6C\x20\x61\x6B\x68\x69\x72","\x74\x65\x73\x74","\x6C\x6F\x67","\x6D\x6F\x6E\x74\x68","\x4D\x75\x68\x61\x72\x61\x6D","\x46\x65\x62\x72\x75\x61\x72\x69","\x72\x65\x6D\x6F\x76\x65\x43\x6C\x61\x73\x73","\x63\x6F\x6C\x6F\x72","\x66\x6C\x6F\x6F\x72","\x48\x61\x72\x69\x20\x52\x61\x79\x61\x20\x4E\x79\x65\x70\x69\x3B","\x20\x2E\x6D\x2D\x64\x61\x74\x65","\x4B\x65\x6E\x61\x69\x6B\x61\x6E\x20\x49\x73\x61\x20\x41\x6C\x2D\x4D\x61\x73\x69\x68\x3B","\x48\x61\x72\x61\x6D\x20\x62\x65\x72\x70\x75\x61\x73\x61\x20\x2D\x20\x49\x64\x75\x6C\x20\x46\x69\x74\x72\x69\x20","\x2E\x74\x62\x6C\x2D\x68\x69\x6A\x72\x20\x2E\x72\x6F\x77\x2D","\x73\x70\x6C\x69\x74","\x4A\x75\x6D\x61\x64\x69\x6C\x61\x6B\x69\x72","\x73\x65\x74\x62\x75\x6C\x61\x6E","\x67\x65\x74\x44\x61\x74\x65","\x42\x65\x73\x61\x72","\x2D\x32\x70\x78","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x4D\x61\x72\x65\x74","\x20\x3A\x20\x48\x61\x72\x69\x20\x52\x61\x79\x61\x20\x4E\x79\x65\x70\x69\x3C\x2F\x73\x70\x61\x6E\x3E\x3C\x61\x20\x68\x72\x65\x66\x3D\x27\x23\x21\x27\x20\x63\x6C\x61\x73\x73\x3D\x27\x73\x65\x63\x6F\x6E\x64\x61\x72\x79\x2D\x63\x6F\x6E\x74\x65\x6E\x74\x27\x3E\x3C\x2F\x61\x3E\x3C\x2F\x6C\x69\x3E","\x73\x68\x69\x66\x74","\x70\x75\x73\x68","\x30\x78\x35\x36","\x30\x78\x34","\x30\x78\x31\x34","\x41\x70\x72\x69\x6C","\x30\x78\x35\x63","\x30\x78\x36\x63","\x4A\x75\x6C\x69","\x30\x78\x32\x63","\x30\x78\x33\x63","\x30\x78\x32\x33","\x30\x78\x33\x33","\x30\x78\x34\x35","\x3C\x6F\x70\x74\x69\x6F\x6E\x20\x76\x61\x6C\x75\x65\x3D\x27","\x27\x3E","\x30\x78\x33\x64","\x23\x6C\x69\x73\x74\x2D\x6D\x6F\x6E\x74\x68","\x30\x78\x31\x65","\x30\x78\x37\x32","\x30\x78\x36\x33","\x30\x78\x34\x61","\x30\x78\x35\x37","\x30\x78\x36\x64","\u06F0","\u0661","\u0662","\u0663","\u0664","\u0665","\u0666","\u0667","\u0668","\u0669","","\x30\x78\x64","\x30\x78\x36\x31","\x30\x78\x30","\x30\x78\x36\x35","\x30\x78\x33\x61","\x30\x78\x31","\x30\x78\x36\x37","\x30\x78\x32\x36","\x30\x78\x32\x39","\x30\x78\x32\x65","\x30\x78\x35\x39","\x30\x78\x33","\x30\x78\x31\x62","\x30\x78\x33\x31","\x30\x78\x37\x33","\x30\x78\x32\x34","\x30\x78\x34\x36","\x52\x61\x6A\x61\x62","\x53\x79\x61\x6B\x62\x61\x6E","\x52\x61\x6D\x61\x64\x61\x6E","\x30\x78\x34\x32","\x30\x78\x35\x64","\x30\x78\x33\x34","\x30\x78\x31\x36","\x30\x78\x31\x37","\x30\x78\x36\x39","\x30\x78\x32\x35","\x30\x78\x35\x31","\x30\x78\x65","\x52\x65\x6A\x65\x62","\x30\x78\x33\x39","\x50\x61\x73\x61","\x30\x78\x32\x38","\x53\x65\x6C\x61","\x30\x78\x31\x31","\x30\x78\x34\x64","\x30\x78\x31\x33","\x30\x78\x31\x66","\x30\x78\x35\x34","\x30\x78\x31\x30","\x20","\x30\x78\x37\x31","\x20\x48","\x30\x78\x36\x61","\x30\x78\x33\x65","\x30\x78\x35\x62","\x23\x68\x61\x72\x69\x6C\x69\x62\x75\x72\x20\x2E\x63\x6F\x6C\x6C\x65\x63\x74\x69\x6F\x6E\x20\x2E\x63\x6F\x6C\x6C\x65\x63\x74\x69\x6F\x6E\x2D\x69\x74\x65\x6D","\x30\x78\x34\x39","\x30\x78\x35\x66","\x30\x78\x34\x33","\x30\x78\x35\x35","\x30\x78\x36\x38","\x30\x78\x63","\x30\x78\x34\x63","\x30\x78\x39","\x30\x78\x32\x62","\x30\x78\x31\x61","\x4D\x61\x73\x65\x68\x69\x20\x3A\x20","\x30\x78\x33\x62","\x30\x78\x34\x37","\x3B","\x30\x78\x35\x30","\x30\x78\x31\x38","\x30\x78\x33\x38","\x30\x78\x33\x37","\x30\x78\x31\x32","\x30\x78\x33\x32","\x30\x78\x35\x32","\x30\x78\x32","\x30\x78\x36\x66","\x30\x78\x34\x62","\x30\x78\x35\x33","\x30\x78\x31\x63","\x30\x78\x32\x66","\x30\x78\x34\x65","\x30\x78\x62","\x48\x61\x72\x61\x6D\x20\x62\x65\x72\x70\x75\x61\x73\x61\x20\x2D\x20\x49\x64\x75\x6C\x20\x41\x64\x68\x61\x20","\x30\x78\x34\x38","\x30\x78\x33\x35","\x30\x78\x35","\x30\x78\x37\x30","\x23\x62\x62\x64\x65\x66\x62","\x30\x78\x31\x39","\x30\x78\x32\x61","\x20\x3A\x20","\x30\x78\x36\x32","\x30\x78\x36\x34","\x30\x78\x36","\x30\x78\x34\x30","\x2D","\x30","\x30\x78\x31\x64","\x30\x78\x35\x65","\x30\x78\x32\x37","\x30\x78\x32\x64","\x30\x78\x38","\x30\x78\x31\x35","\x30\x78\x34\x34","\x30\x78\x36\x36","\x30\x78\x61","\x30\x78\x32\x31","\x30\x78\x66","\x30\x78\x36\x62","\x20\x2D\x20","\x30\x78\x34\x31","\x30\x78\x33\x30","\x30\x78\x32\x32","\x73\x6C\x69\x64\x65\x44\x6F\x77\x6E","\x4C\x65\x67\x69","\x30\x78\x36\x65","\x30\x78\x33\x66","\x30\x78\x35\x38","\x4B\x6C\x69\x77\x6F\x6E","\x30\x78\x34\x66","\x2F","\x30\x78\x32\x30","\x30\x78\x37","\x30\x78\x36\x30","\x77\x68\x69\x74\x65","\x30\x78\x33\x36","\x30\x78\x35\x61"];var _0x1563=[_0xb342[0],_0xb342[1],_0xb342[2],_0xb342[3],_0xb342[4],_0xb342[5],_0xb342[6],_0xb342[7],_0xb342[8],_0xb342[9],_0xb342[10],_0xb342[11],_0xb342[12],_0xb342[13],_0xb342[14],_0xb342[15],_0xb342[16],_0xb342[17],_0xb342[18],_0xb342[19],_0xb342[20],_0xb342[21],_0xb342[22],_0xb342[23],_0xb342[24],_0xb342[25],_0xb342[26],_0xb342[27],_0xb342[28],_0xb342[29],_0xb342[30],_0xb342[31],_0xb342[32],_0xb342[33],_0xb342[34],_0xb342[35],_0xb342[36],_0xb342[37],_0xb342[38],_0xb342[39],_0xb342[40],_0xb342[41],_0xb342[42],_0xb342[43],_0xb342[44],_0xb342[45],_0xb342[46],_0xb342[47],_0xb342[48],_0xb342[49],_0xb342[50],_0xb342[51],_0xb342[52],_0xb342[53],_0xb342[54],_0xb342[55],_0xb342[56],_0xb342[57],_0xb342[58],_0xb342[59],_0xb342[60],_0xb342[61],_0xb342[62],_0xb342[63],_0xb342[64],_0xb342[65],_0xb342[66],_0xb342[67],_0xb342[68],_0xb342[69],_0xb342[70],_0xb342[71],_0xb342[72],_0xb342[73],_0xb342[74],_0xb342[75],_0xb342[76],_0xb342[77],_0xb342[78],_0xb342[79],_0xb342[80],_0xb342[81],_0xb342[82],_0xb342[83],_0xb342[84],_0xb342[85],_0xb342[86],_0xb342[87],_0xb342[88],_0xb342[89],_0xb342[90],_0xb342[91],_0xb342[92],_0xb342[93],_0xb342[94],_0xb342[95],_0xb342[96],_0xb342[97],_0xb342[98],_0xb342[99],_0xb342[100],_0xb342[101],_0xb342[102],_0xb342[103],_0xb342[104],_0xb342[105],_0xb342[106],_0xb342[107],_0xb342[108],_0xb342[109],_0xb342[110],_0xb342[111],_0xb342[112],_0xb342[113],_0xb342[114],_0xb342[115]];(function(_0x8159x2,_0x8159x3){var _0x8159x4=function(_0x8159x5){while(--_0x8159x5){_0x8159x2[_0xb342[117]](_0x8159x2[_0xb342[116]]())}};_0x8159x4(++_0x8159x3)}(_0x1563,0x1ba));var _0x1650=function(_0x8159x2,_0x8159x3){_0x8159x2= _0x8159x2- 0x0;var _0x8159x4=_0x1563[_0x8159x2];return _0x8159x4};var bulan=[_0x1650(_0xb342[118]),_0x1650(_0xb342[119]),_0x1650(_0xb342[120]),_0xb342[121],_0x1650(_0xb342[122]),_0x1650(_0xb342[123]),_0xb342[124],_0x1650(_0xb342[125]),_0x1650(_0xb342[126]),_0x1650(_0xb342[127]),_0x1650(_0xb342[128]),_0x1650(_0xb342[129])];for(var i=0x0;i< bulan[_0xb342[75]];i++){$(_0xb342[133])[_0xb342[76]](_0xb342[130]+ i+ _0xb342[131]+ bulan[i]+ _0x1650(_0xb342[132]))};var hari=[_0x1650(_0xb342[134]),_0x1650(_0xb342[135]),_0xb342[63],_0x1650(_0xb342[136]),_0x1650(_0xb342[137]),_0x1650(_0xb342[138]),_0x1650(_0xb342[139])];var arabicNumbers=[_0xb342[140],_0xb342[141],_0xb342[142],_0xb342[143],_0xb342[144],_0xb342[145],_0xb342[146],_0xb342[147],_0xb342[148],_0xb342[149]];function convertToArab(_0x8159xc){var _0x8159xd=_0x8159xc[_0x1650(_0xb342[151])](_0xb342[150]);for(var _0x8159xe=0x0;_0x8159xe< _0x8159xd[_0x1650(_0xb342[152])];_0x8159xe++){if(/\d/[_0x1650(_0xb342[153])](_0x8159xd[_0x8159xe])){_0x8159xd[_0x8159xe]= arabicNumbers[_0x8159xd[_0x8159xe]]}};return _0x8159xd[_0x1650(_0xb342[154])](_0xb342[150])}console[_0x1650(_0xb342[156])](HijriJS[_0x1650(_0xb342[155])](0x5a1,0x0,0x0));function generate_table(_0x8159x10,_0x8159x11){$(_0x1650(_0xb342[158]))[_0x1650(_0xb342[157])]();$(_0x1650(_0xb342[160]))[_0x1650(_0xb342[159])]();$(_0x1650(_0xb342[161]))[_0x1650(_0xb342[159])]();var _0x8159x12=[_0x1650(_0xb342[162]),_0x1650(_0xb342[163]),_0x1650(_0xb342[164]),_0x1650(_0xb342[165]),_0x1650(_0xb342[166]),_0x1650(_0xb342[167]),_0xb342[168],_0xb342[169],_0xb342[170],_0x1650(_0xb342[171]),_0x1650(_0xb342[172]),_0x1650(_0xb342[173])];var _0x8159x13=[_0x1650(_0xb342[174]),_0x1650(_0xb342[175]),_0x1650(_0xb342[176]),_0x1650(_0xb342[177]),_0x1650(_0xb342[178]),_0x1650(_0xb342[179]),_0xb342[180],_0x1650(_0xb342[181]),_0xb342[182],_0x1650(_0xb342[183]),_0xb342[184],_0x1650(_0xb342[185])];var _0x8159x14= new Date(_0x8159x11,_0x8159x10,0x1);var _0x8159x15= new Date(_0x8159x11,_0x8159x10+ 0x1,0x0);var _0x8159x16=document[_0x1650(_0xb342[187])](_0x1650(_0xb342[186]));var _0x8159x17=HijriJS[_0xb342[84]](_0x8159x14[_0x1650(_0xb342[188])](),_0x8159x14[_0x1650(_0xb342[189])]()+ 0x1,_0x8159x14[_0x1650(_0xb342[190])]());_0x8159x17= _0x8159x17[_0xb342[40]]+ _0xb342[191]+ _0x8159x12[_0x8159x17[_0xb342[96]]- 0x1]+ _0xb342[191]+ _0x8159x17[_0x1650(_0xb342[192])]+ _0xb342[193];var _0x8159x18=HijriJS[_0x1650(_0xb342[194])](_0x8159x15[_0x1650(_0xb342[188])](),_0x8159x15[_0x1650(_0xb342[189])]()+ 0x1,_0x8159x15[_0x1650(_0xb342[190])]());_0x8159x18= _0x8159x18[_0x1650(_0xb342[195])]+ _0xb342[191]+ _0x8159x12[_0x8159x18[_0xb342[96]]- 0x1]+ _0xb342[191]+ _0x8159x18[_0x1650(_0xb342[192])]+ _0xb342[193];$(_0xb342[197])[_0x1650(_0xb342[196])]();$(_0x1650(_0xb342[199]))[_0x1650(_0xb342[198])]({'\x62\x6F\x72\x64\x65\x72\x2D\x74\x6F\x70':_0xb342[150],'\x70\x61\x64\x64\x69\x6E\x67\x2D\x74\x6F\x70':_0xb342[150]});var _0x8159x19=[0x1f,0x1c,0x1f,0x1e,0x1f,0x1e,0x1f,0x1f,0x1e,0x1f,0x1e,0x1f];var _0x8159x1a=0x1;var _0x8159x1b=0x0;var _0x8159x1c=_0x8159x14[_0x1650(_0xb342[200])]();if(_0x8159x11% 0x4== 0x0){_0x8159x19= [0x1f,0x1d,0x1f,0x1e,0x1f,0x1e,0x1f,0x1f,0x1e,0x1f,0x1e,0x1f]};for(var _0x8159x1d=0x0;_0x8159x1d< 0x6;_0x8159x1d++){for(var _0x8159x1e=0x0;_0x8159x1e< 0x8;_0x8159x1e++){if(_0x8159x1a<= _0x8159x19[_0x8159x10]){if(_0x8159x1c== 0x0){var _0x8159x1f=_0x1650(_0xb342[134])}else {if(_0x8159x1c== 0x1){var _0x8159x1f=_0x1650(_0xb342[135])}else {if(_0x8159x1c== 0x2){var _0x8159x1f=_0x1650(_0xb342[201])}else {if(_0x8159x1c== 0x3){var _0x8159x1f=_0xb342[77]}else {if(_0x8159x1c== 0x4){var _0x8159x1f=_0x1650(_0xb342[137])}else {if(_0x8159x1c== 0x5){var _0x8159x1f=_0x1650(_0xb342[202])}else {if(_0x8159x1c== 0x6){var _0x8159x1f=_0x1650(_0xb342[139])}}}}}}};hijriDate= HijriJS[_0x1650(_0xb342[194])](_0x8159x14[_0x1650(_0xb342[188])](),_0x8159x14[_0x1650(_0xb342[189])]()+ 0x1,_0x8159x1a);mDateEll= document[_0x1650(_0xb342[187])](_0x1650(_0xb342[203])+ _0x8159x1b+ _0x1650(_0xb342[204])+ _0x8159x1c+ _0x1650(_0xb342[205]));hDateEll= document[_0x1650(_0xb342[187])](_0xb342[106]+ _0x8159x1b+ _0x1650(_0xb342[204])+ _0x8159x1c+ _0xb342[68]);pasarJava= pasaran(_0x8159x14[_0xb342[9]](),_0x8159x14[_0x1650(_0xb342[189])]()+ 0x1,_0x8159x1a);mDateEll[_0x1650(_0xb342[206])]= _0x8159x1a;hDateEll[_0x1650(_0xb342[206])]= convertToArab(_0xb342[150]+ hijriDate[_0x1650(_0xb342[195])]+ _0xb342[150]);var _0x8159x20=document[_0x1650(_0xb342[187])](_0x1650(_0xb342[203])+ _0x8159x1b+ _0x1650(_0xb342[204])+ _0x8159x1c+ _0x1650(_0xb342[207]));var _0x8159x21=_0x8159x1f+ _0xb342[191]+ pasarJava;_0x8159x20[_0xb342[21]]= _0xb342[208]+ _0x8159x1a+ _0xb342[191]+ bulan[_0x8159x10]+ _0xb342[191]+ _0x8159x11+ _0x1650(_0xb342[209])+ hijriDate[_0x1650(_0xb342[195])]+ _0xb342[191]+ _0x8159x12[hijriDate[_0xb342[96]]- 0x1]+ _0xb342[191]+ hijriDate[_0x1650(_0xb342[192])]+ _0x1650(_0xb342[210])+ _0x8159x21+ _0xb342[211];if(_0x8159x1c== 0x1|| _0x8159x1c== 0x4){hDateEll[_0x1650(_0xb342[213])][_0x1650(_0xb342[212])]= _0x1650(_0xb342[214]);hDateEll[_0x1650(_0xb342[213])][_0x1650(_0xb342[215])]= _0x1650(_0xb342[216])};if(hijriDate[_0x1650(_0xb342[195])]== 0xd|| hijriDate[_0x1650(_0xb342[195])]== 0xe|| hijriDate[_0x1650(_0xb342[195])]== 0xf){hDateEll[_0x1650(_0xb342[213])][_0xb342[58]]= _0x1650(_0xb342[217]);hDateEll[_0x1650(_0xb342[213])][_0x1650(_0xb342[215])]= _0x1650(_0xb342[216]);_0x8159x20[_0x1650(_0xb342[206])]+= _0x1650(_0xb342[218])+ hijriDate[_0x1650(_0xb342[195])]+ _0xb342[191]+ _0x8159x12[hijriDate[_0x1650(_0xb342[219])]- 0x1]+ _0xb342[191]+ hijriDate[_0x1650(_0xb342[192])]+ _0xb342[211]};if(hijriDate[_0x1650(_0xb342[219])]== 0x9){hDateEll[_0x1650(_0xb342[213])][_0x1650(_0xb342[212])]= _0x1650(_0xb342[220]);hDateEll[_0x1650(_0xb342[213])][_0x1650(_0xb342[215])]= _0x1650(_0xb342[216])};if(hijriDate[_0x1650(_0xb342[195])]== 0x9&& hijriDate[_0x1650(_0xb342[219])]== 0xc){hDateEll[_0x1650(_0xb342[213])][_0x1650(_0xb342[212])]= _0x1650(_0xb342[221]);hDateEll[_0x1650(_0xb342[213])][_0x1650(_0xb342[215])]= _0x1650(_0xb342[216]);_0x8159x20[_0xb342[21]]+= _0x1650(_0xb342[222])+ hijriDate[_0x1650(_0xb342[195])]+ _0xb342[191]+ _0x8159x12[hijriDate[_0xb342[96]]- 0x1]+ _0xb342[191]+ hijriDate[_0x1650(_0xb342[192])]+ _0xb342[211]};if(hijriDate[_0x1650(_0xb342[195])]== 0xa&& hijriDate[_0xb342[96]]== 0x1){hDateEll[_0xb342[2]][_0x1650(_0xb342[212])]= _0x1650(_0xb342[223]);hDateEll[_0xb342[2]][_0x1650(_0xb342[215])]= _0x1650(_0xb342[216]);_0x8159x20[_0x1650(_0xb342[206])]+= _0x1650(_0xb342[224])+ hijriDate[_0x1650(_0xb342[195])]+ _0xb342[191]+ _0x8159x12[hijriDate[_0x1650(_0xb342[219])]- 0x1]+ _0xb342[191]+ hijriDate[_0x1650(_0xb342[192])]+ _0xb342[211]};if(hijriDate[_0x1650(_0xb342[195])]== 0x1&& hijriDate[_0x1650(_0xb342[219])]== 0xa){hDateEll[_0xb342[2]][_0x1650(_0xb342[212])]= _0x1650(_0xb342[225]);hDateEll[_0x1650(_0xb342[213])][_0x1650(_0xb342[215])]= _0x1650(_0xb342[216]);_0x8159x20[_0xb342[21]]+= _0x1650(_0xb342[226])+ hijriDate[_0x1650(_0xb342[195])]+ _0xb342[191]+ _0x8159x12[hijriDate[_0x1650(_0xb342[219])]- 0x1]+ _0xb342[191]+ hijriDate[_0x1650(_0xb342[192])]+ _0xb342[211]};if(hijriDate[_0x1650(_0xb342[195])]== 0xa&& hijriDate[_0x1650(_0xb342[219])]== 0xc){hDateEll[_0x1650(_0xb342[213])][_0x1650(_0xb342[212])]= _0x1650(_0xb342[225]);hDateEll[_0x1650(_0xb342[213])][_0x1650(_0xb342[215])]= _0xb342[112];_0x8159x20[_0x1650(_0xb342[206])]+= _0xb342[227]+ hijriDate[_0x1650(_0xb342[195])]+ _0xb342[191]+ _0x8159x12[hijriDate[_0x1650(_0xb342[219])]- 0x1]+ _0xb342[191]+ hijriDate[_0xb342[91]]+ _0xb342[211]};if(hijriDate[_0x1650(_0xb342[195])]== 0xb&& hijriDate[_0x1650(_0xb342[219])]== 0xc|| hijriDate[_0x1650(_0xb342[195])]== 0xc&& hijriDate[_0x1650(_0xb342[219])]== 0xc|| hijriDate[_0xb342[40]]== 0xd&& hijriDate[_0x1650(_0xb342[219])]== 0xc){hDateEll[_0x1650(_0xb342[213])][_0x1650(_0xb342[212])]= _0x1650(_0xb342[225]);hDateEll[_0x1650(_0xb342[213])][_0x1650(_0xb342[215])]= _0x1650(_0xb342[216]);_0x8159x20[_0x1650(_0xb342[206])]+= _0x1650(_0xb342[228])+ hijriDate[_0x1650(_0xb342[195])]+ _0xb342[191]+ _0x8159x12[hijriDate[_0xb342[96]]- 0x1]+ _0xb342[191]+ hijriDate[_0x1650(_0xb342[192])]+ _0xb342[211]};var _0x8159x22= new Date();var _0x8159x23=_0x8159x22[_0x1650(_0xb342[190])]();var _0x8159x24=_0x8159x22[_0xb342[62]]();var _0x8159x25=_0x8159x22[_0xb342[9]]();$(_0x1650(_0xb342[203])+ _0x8159x1b+ _0x1650(_0xb342[204])+ _0x8159x1c)[_0x1650(_0xb342[230])](_0x1650(_0xb342[229]));if(_0x8159x11== _0x8159x25&& _0x8159x10== _0x8159x24&& _0x8159x1a== _0x8159x23){$(_0x1650(_0xb342[203])+ _0x8159x1b+ _0x1650(_0xb342[204])+ _0x8159x1c)[_0x1650(_0xb342[198])](_0x1650(_0xb342[231]),_0xb342[232])};$(_0x1650(_0xb342[203])+ _0x8159x1b+ _0x1650(_0xb342[204])+ _0x8159x1c+ _0x1650(_0xb342[205]))[_0xb342[51]](_0xb342[100],_0xb342[150]);if(HariLiburNasional[_0x8159x1a+ _0xb342[191]+ bulan[_0x8159x10]]){$(_0x1650(_0xb342[203])+ _0x8159x1b+ _0xb342[54]+ _0x8159x1c+ _0x1650(_0xb342[205]))[_0xb342[51]](_0xb342[100],_0x1650(_0xb342[233]));_0x8159x20[_0x1650(_0xb342[206])]+= HariLiburNasional[_0x8159x1a+ _0xb342[191]+ bulan[_0x8159x10]]+ _0xb342[211];$(_0x1650(_0xb342[237]))[_0x1650(_0xb342[236])](_0x1650(_0xb342[234])+ _0x8159x1a+ _0xb342[191]+ bulan[_0x8159x10]+ _0xb342[235]+ HariLiburNasional[_0x8159x1a+ _0xb342[191]+ bulan[_0x8159x10]]+ _0xb342[42])}else {if(HariLiburIslam[hijriDate[_0x1650(_0xb342[195])]+ _0xb342[191]+ _0x8159x13[hijriDate[_0xb342[96]]- 0x1]]){$(_0x1650(_0xb342[203])+ _0x8159x1b+ _0x1650(_0xb342[204])+ _0x8159x1c+ _0x1650(_0xb342[205]))[_0xb342[51]](_0x1650(_0xb342[238]),_0x1650(_0xb342[233]));_0x8159x20[_0x1650(_0xb342[206])]+= HariLiburIslam[hijriDate[_0xb342[40]]+ _0xb342[191]+ _0x8159x13[hijriDate[_0x1650(_0xb342[219])]- 0x1]]+ _0xb342[211];$(_0x1650(_0xb342[237]))[_0xb342[76]](_0x1650(_0xb342[234])+ _0x8159x1a+ _0xb342[191]+ bulan[_0x8159x10]+ _0xb342[235]+ HariLiburIslam[hijriDate[_0x1650(_0xb342[195])]+ _0xb342[191]+ _0x8159x13[hijriDate[_0xb342[96]]- 0x1]]+ _0x1650(_0xb342[239]))}else {if(ChineseNewYear[_0x1650(_0xb342[243])](_0x8159x11+ _0xb342[240]+ String(_0x8159x10+ 0x1)[_0xb342[7]](0x2,_0xb342[241])+ _0xb342[240]+ String(_0x8159x1a)[_0x1650(_0xb342[242])](0x2,_0xb342[241]))){$(_0xb342[106]+ _0x8159x1b+ _0x1650(_0xb342[204])+ _0x8159x1c+ _0x1650(_0xb342[205]))[_0x1650(_0xb342[198])](_0xb342[100],_0x1650(_0xb342[233]));_0x8159x20[_0xb342[21]]+= _0x1650(_0xb342[244]);$(_0x1650(_0xb342[237]))[_0x1650(_0xb342[236])](_0x1650(_0xb342[234])+ _0x8159x1a+ _0xb342[191]+ bulan[_0x8159x10]+ _0x1650(_0xb342[245]))}else {if(HariNyepi[_0x1650(_0xb342[243])](_0x8159x11+ _0xb342[240]+ String(_0x8159x10+ 0x1)[_0x1650(_0xb342[242])](0x2,_0xb342[241])+ _0xb342[240]+ String(_0x8159x1a)[_0x1650(_0xb342[242])](0x2,_0xb342[241]))){$(_0x1650(_0xb342[203])+ _0x8159x1b+ _0xb342[54]+ _0x8159x1c+ _0xb342[103])[_0x1650(_0xb342[198])](_0xb342[100],_0x1650(_0xb342[233]));_0x8159x20[_0xb342[21]]+= _0x1650(_0xb342[246]);$(_0x1650(_0xb342[237]))[_0x1650(_0xb342[236])](_0xb342[20]+ _0x8159x1a+ _0xb342[191]+ bulan[_0x8159x10]+ _0x1650(_0xb342[247]))}else {if(JumatAgung[_0x1650(_0xb342[243])](_0x8159x11+ _0xb342[240]+ String(_0x8159x10+ 0x1)[_0x1650(_0xb342[242])](0x2,_0xb342[241])+ _0xb342[240]+ String(_0x8159x1a)[_0x1650(_0xb342[242])](0x2,_0xb342[241]))){$(_0x1650(_0xb342[203])+ _0x8159x1b+ _0x1650(_0xb342[204])+ _0x8159x1c+ _0x1650(_0xb342[205]))[_0x1650(_0xb342[198])](_0x1650(_0xb342[238]),_0x1650(_0xb342[233]));_0x8159x20[_0x1650(_0xb342[206])]+= _0x1650(_0xb342[248]);$(_0x1650(_0xb342[237]))[_0x1650(_0xb342[236])](_0x1650(_0xb342[234])+ _0x8159x1a+ _0xb342[191]+ bulan[_0x8159x10]+ _0x1650(_0xb342[249]))}else {if(KenaikanIsa[_0x1650(_0xb342[243])](_0x8159x11+ _0xb342[240]+ String(_0x8159x10+ 0x1)[_0x1650(_0xb342[242])](0x2,_0xb342[241])+ _0xb342[240]+ String(_0x8159x1a)[_0xb342[7]](0x2,_0xb342[241]))){$(_0x1650(_0xb342[203])+ _0x8159x1b+ _0x1650(_0xb342[204])+ _0x8159x1c+ _0xb342[103])[_0xb342[51]](_0x1650(_0xb342[238]),_0x1650(_0xb342[233]));_0x8159x20[_0x1650(_0xb342[206])]+= _0x1650(_0xb342[250]);$(_0x1650(_0xb342[237]))[_0x1650(_0xb342[236])](_0x1650(_0xb342[234])+ _0x8159x1a+ _0xb342[191]+ bulan[_0x8159x10]+ _0x1650(_0xb342[251]))}}}}}}};_0x8159x1a++;_0x8159x1c++;if(_0x8159x1c> 0x6){_0x8159x1c= 0x0;_0x8159x1b++}};if(_0x8159x1b> 0x6){_0x8159x1b= 0x0}};document[_0x1650(_0xb342[253])](_0x1650(_0xb342[252]))[_0xb342[21]]= _0x8159x17+ _0xb342[254]+ _0x8159x18;if($(_0x1650(_0xb342[255]))[_0xb342[75]]== 0x0){$(_0x1650(_0xb342[237]))[_0xb342[76]](_0x1650(_0xb342[256]))};$(_0x1650(_0xb342[158]))[_0xb342[258]](_0x1650(_0xb342[257]))}function pasaran(_0x8159x27,_0x8159x28,_0x8159x29){var _0x8159x2a= new Array(_0xb342[259],_0x1650(_0xb342[260]),_0x1650(_0xb342[261]),_0x1650(_0xb342[262]),_0xb342[263]);var _0x8159x2b= new Date(_0x1650(_0xb342[264]));var _0x8159x2c= new Date(_0x8159x27+ _0xb342[265]+ _0x8159x28+ _0xb342[265]+ _0x8159x29);var _0x8159x2d=Math[_0x1650(_0xb342[267])](Math[_0x1650(_0xb342[266])](_0x8159x2c- _0x8159x2b)/ 0x5265c00);var _0x8159x2e=_0x8159x2a[_0x8159x2d% 0x5];return _0x8159x2e}function clearAll(){for(var _0x8159x30=0x0;_0x8159x30< 0x6;_0x8159x30++){for(var _0x8159x31=0x0;_0x8159x31< 0x7;_0x8159x31++){document[_0x1650(_0xb342[187])](_0xb342[106]+ _0x8159x30+ _0x1650(_0xb342[204])+ _0x8159x31)[_0x1650(_0xb342[213])][_0x1650(_0xb342[268])]= _0xb342[269];document[_0x1650(_0xb342[187])](_0x1650(_0xb342[203])+ _0x8159x30+ _0x1650(_0xb342[204])+ _0x8159x31+ _0x1650(_0xb342[205]))[_0x1650(_0xb342[270])]= _0xb342[150];document[_0x1650(_0xb342[187])](_0x1650(_0xb342[203])+ _0x8159x30+ _0x1650(_0xb342[204])+ _0x8159x31+ _0x1650(_0xb342[271]))[_0xb342[32]]= _0xb342[150]}}}
+</script>
+
+<script>
+var _0x8288=["\x41\x67\x75\x73\x74\x75\x73","\x23\x67\x6F\x5F\x79\x65\x61\x72","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x68\x74\x6D\x6C\x2C\x20\x62\x6F\x64\x79","\x72\x65\x61\x64\x79","\x6C\x65\x6E\x67\x74\x68","\x23\x6C\x69\x73\x74\x2D\x6D\x6F\x6E\x74\x68","\x4E\x6F\x76\x65\x6D\x62\x65\x72","\x23\x6D\x6F\x6E\x74\x68","\x6D\x6F\x6E\x74\x68","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x41\x70\x72\x69\x6C","\x63\x6C\x69\x63\x6B","\x53\x65\x70\x74\x65\x6D\x62\x65\x72","\x4A\x61\x6E\x75\x61\x72\x69","\x79\x65\x61\x72","\x23\x6C\x69\x73\x74\x2D\x79\x65\x61\x72","\x4A\x75\x6E\x69","\x23\x73\x63","\x44\x65\x76\x65\x6C\x6F\x70\x65\x64\x20\x62\x79\x20\x6B\x65\x6E\x74\x68\x75\x73","\x49\x6E\x76\x61\x6C\x69\x64\x20\x74\x6F\x6B\x65\x6E\x21","\x44\x65\x73\x65\x6D\x62\x65\x72","\x6F\x66\x66\x73\x65\x74","\x74\x6F\x70","\x23\x6C\x69\x73\x74\x2D\x6D\x6F\x6E\x74\x68\x20\x6F\x70\x74\x69\x6F\x6E\x3A\x73\x65\x6C\x65\x63\x74\x65\x64","\x23\x79\x65\x61\x72","\x76\x61\x6C","\x4D\x65\x69","\x74\x65\x78\x74","\x23\x6C\x69\x73\x74\x2D\x79\x65\x61\x72\x20\x6F\x70\x74\x69\x6F\x6E\x3A\x73\x65\x6C\x65\x63\x74\x65\x64","\x67\x65\x74\x46\x75\x6C\x6C\x59\x65\x61\x72","\x73\x68\x69\x66\x74","\x70\x75\x73\x68","\x67\x65\x74\x4D\x6F\x6E\x74\x68","\x30\x78\x38","\x30\x78\x36","\x30\x78\x31\x31","\x30\x78\x33","\x30\x78\x31\x37","\x46\x65\x62\x72\x75\x61\x72\x69","\x4D\x61\x72\x65\x74","\x30\x78\x31\x34","\x30\x78\x35","\x30\x78\x31\x61","\x4A\x75\x6C\x69","\x30\x78\x39","\x30\x78\x31\x36","\x4F\x6B\x74\x6F\x62\x65\x72","\x30\x78\x31\x30","\x30\x78\x31\x65","\x30\x78\x34","\x30\x78\x66","\x30\x78\x31\x39","\x30\x78\x65","\x30\x78\x31\x62","\x30\x78\x31\x63","\x30\x78\x31\x64","\x30\x78\x64","\x30\x78\x31\x33","\x30\x78\x31\x32","\x30\x78\x62","\x30\x78\x31\x38","\x30\x78\x32","\x30\x78\x37","\x30\x78\x31","\x30\x78\x30","\x23\x68\x61\x72\x69\x5F\x69\x6E\x69","\x61\x6E\x69\x6D\x61\x74\x65","\x30\x78\x63","\x30\x78\x31\x35","\x30\x78\x61"];var _0x32c0=[_0x8288[0],_0x8288[1],_0x8288[2],_0x8288[3],_0x8288[4],_0x8288[5],_0x8288[6],_0x8288[7],_0x8288[8],_0x8288[9],_0x8288[10],_0x8288[11],_0x8288[12],_0x8288[13],_0x8288[14],_0x8288[15],_0x8288[16],_0x8288[17],_0x8288[18],_0x8288[19],_0x8288[20],_0x8288[21],_0x8288[22],_0x8288[23],_0x8288[24],_0x8288[25],_0x8288[26],_0x8288[27],_0x8288[28],_0x8288[29],_0x8288[30]];(function(_0x4092x2,_0x4092x3){var _0x4092x4=function(_0x4092x5){while(--_0x4092x5){_0x4092x2[_0x8288[32]](_0x4092x2[_0x8288[31]]())}};_0x4092x4(++_0x4092x3)}(_0x32c0,0x18a));var _0x5902=function(_0x4092x2,_0x4092x3){_0x4092x2= _0x4092x2- 0x0;var _0x4092x4=_0x32c0[_0x4092x2];return _0x4092x4};var d= new Date();var g_month=d[_0x8288[33]]();var g_year=d[_0x5902(_0x8288[34])]();$(_0x5902(_0x8288[36]))[_0x5902(_0x8288[35])](bulan[g_month]);$(_0x8288[25])[_0x5902(_0x8288[35])](g_year);var smonth;var xmonth=$(_0x8288[8])[_0x5902(_0x8288[35])]();var tahun_terpilih=$(_0x5902(_0x8288[37]))[_0x5902(_0x8288[35])]();$(document)[_0x5902(_0x8288[57])](function(){if(xmonth== _0x5902(_0x8288[38])){smonth= 0x0}else {if(xmonth== _0x8288[39]){smonth= 0x1}else {if(xmonth== _0x8288[40]){smonth= 0x2}else {if(xmonth== _0x5902(_0x8288[41])){smonth= 0x3}else {if(xmonth== _0x5902(_0x8288[42])){smonth= 0x4}else {if(xmonth== _0x5902(_0x8288[43])){smonth= 0x5}else {if(xmonth== _0x8288[44]){smonth= 0x6}else {if(xmonth== _0x5902(_0x8288[45])){smonth= 0x7}else {if(xmonth== _0x5902(_0x8288[46])){smonth= 0x8}else {if(xmonth== _0x8288[47]){smonth= 0x9}else {if(xmonth== _0x5902(_0x8288[48])){smonth= 0xa}else {if(xmonth== _0x5902(_0x8288[49])){smonth= 0xb}}}}}}}}}}}};$(_0x5902(_0x8288[51]))[_0x5902(_0x8288[50])](smonth);$(_0x5902(_0x8288[52]))[_0x5902(_0x8288[50])](parseInt(tahun_terpilih)+ 0x1);if($(_0x5902(_0x8288[54]))[_0x5902(_0x8288[53])]< 0x1|| $(_0x5902(_0x8288[54]))[_0x5902(_0x8288[35])]()!== _0x5902(_0x8288[55])){alert(_0x5902(_0x8288[56]));return ![]};generate_table(smonth,tahun_terpilih)});function prev(){clearAll();if(xmonth== _0x5902(_0x8288[38])){document[_0x5902(_0x8288[60])](_0x5902(_0x8288[59]))[_0x5902(_0x8288[58])]= bulan[0xb];document[_0x5902(_0x8288[60])](_0x8288[15])[_0x8288[10]]= parseInt(tahun_terpilih)- 0x1;smonth= 0xb;xmonth= bulan[0xb];tahun_terpilih= parseInt(tahun_terpilih)- 0x1;generate_table(smonth,tahun_terpilih)}else {document[_0x8288[2]](_0x8288[9])[_0x8288[10]]= bulan[smonth- 0x1];xmonth= bulan[smonth- 0x1];smonth= smonth- 0x1;tahun_terpilih= tahun_terpilih;generate_table(smonth,tahun_terpilih)}}function prev_year(){clearAll();document[_0x5902(_0x8288[60])](_0x5902(_0x8288[61]))[_0x5902(_0x8288[58])]= parseInt(tahun_terpilih)- 0x1;smonth= smonth;tahun_terpilih= parseInt(tahun_terpilih)- 0x1;generate_table(smonth,tahun_terpilih)}function next(){clearAll();if(xmonth== _0x8288[21]){document[_0x5902(_0x8288[60])](_0x5902(_0x8288[59]))[_0x5902(_0x8288[58])]= bulan[0x0];document[_0x8288[2]](_0x8288[15])[_0x5902(_0x8288[58])]= parseInt(tahun_terpilih)+ 0x1;smonth= 0x0;xmonth= bulan[0x0];tahun_terpilih= parseInt(tahun_terpilih)+ 0x1;generate_table(smonth,tahun_terpilih)}else {document[_0x5902(_0x8288[60])](_0x5902(_0x8288[59]))[_0x8288[10]]= bulan[smonth+ 0x1];xmonth= bulan[smonth+ 0x1];smonth= smonth+ 0x1;tahun_terpilih= tahun_terpilih;generate_table(smonth,tahun_terpilih)}}function next_year(){clearAll();document[_0x8288[2]](_0x5902(_0x8288[61]))[_0x5902(_0x8288[58])]= parseInt(tahun_terpilih)+ 0x1;smonth= smonth;tahun_terpilih= parseInt(tahun_terpilih)+ 0x1;generate_table(smonth,tahun_terpilih)}$(_0x5902(_0x8288[70]))[_0x5902(_0x8288[69])](function(){clearAll();var _0x4092x11=parseInt($(_0x5902(_0x8288[62]))[_0x5902(_0x8288[50])]());var _0x4092x12=parseInt($(_0x5902(_0x8288[63]))[_0x8288[26]]());document[_0x8288[2]](_0x5902(_0x8288[59]))[_0x5902(_0x8288[58])]= bulan[_0x4092x11];document[_0x5902(_0x8288[60])](_0x5902(_0x8288[61]))[_0x5902(_0x8288[58])]= _0x4092x12;smonth= _0x4092x11;tahun_terpilih= _0x4092x12;generate_table(smonth,tahun_terpilih);$(_0x5902(_0x8288[68]))[_0x8288[67]]({'\x73\x63\x72\x6F\x6C\x6C\x54\x6F\x70':$(_0x8288[66])[_0x5902(_0x8288[65])]()[_0x5902(_0x8288[64])]},0x3e8)})
+</script>
+ 
+<script>
+var _0x3f2902=_0x2a4d;(function(_0x569b76,_0x1d748f){var _0x547997=_0x2a4d,_0xc0fb23=_0x569b76();while(!![]){try{var _0x7ce43f=parseInt(_0x547997(0x1d8))/(-0x3*0x83+-0x25a6+0x4*0x9cc)*(-parseInt(_0x547997(0x185))/(-0x5*-0x28e+-0x1a9d+0xdd9))+parseInt(_0x547997(0x1a1))/(-0x1*0x13d5+-0x1cc3+0x309b)+parseInt(_0x547997(0x1d0))/(0x10ca+-0x17e+-0x518*0x3)+-parseInt(_0x547997(0x186))/(0x363+0x5fe+-0x95c)*(-parseInt(_0x547997(0x15c))/(-0x121+-0x3*-0x817+0x16*-0x10d))+parseInt(_0x547997(0x1ce))/(0x1ddf+0x2f7+-0x25*0xe3)+parseInt(_0x547997(0x111))/(0xe2f*-0x2+0x1495+0x7d1)*(parseInt(_0x547997(0x1de))/(-0x1fa2+0xf9*0x1c+-0x1*-0x46f))+-parseInt(_0x547997(0x184))/(-0x293+-0x17cd+-0x2e*-0x93);if(_0x7ce43f===_0x1d748f)break;else _0xc0fb23['push'](_0xc0fb23['shift']());}catch(_0x56ea09){_0xc0fb23['push'](_0xc0fb23['shift']());}}}(_0x3fa2,-0x5a16b*0x1+-0x2687d*-0x4+0x719db));function _0x2a4d(_0x3152a5,_0x36e342){var _0x36ada5=_0x3fa2();return _0x2a4d=function(_0x272792,_0x4d8736){_0x272792=_0x272792-(-0x1*0x100f+-0x1*-0x1c67+0x2d4*-0x4);var _0x18cfb=_0x36ada5[_0x272792];return _0x18cfb;},_0x2a4d(_0x3152a5,_0x36e342);}function _0x3fa2(){var _0x245159=['MkDzl','TGSbo','HjjsM','Maret','TMBwR','0x1c','0x16','0xd','YdDkp','kgeGn','tJIjA','WOqyV','0x8','AVxji','HUnIW','jKqMY','April','uNKan','onclick','replace','upiHm','5|11|16|9|','RiNzF','QWQia','eJynN','fsnOB','kctiD','0x5','DVYus','NmRwM','nfEWL','sByClassNa','0x17','Tzxot','hZHVn','Zapmu','myModal','<div\x20class','eTNuL','dljJn','textConten','html','6693736vpjWcG','uchDB','1082144XVDTgt','CibqB','JryaK','IVOWW','|7|1|18|3|','wMZHk','Oktober','0x13','44731qLwGth','0x1f','cXInG','MpLYB','rNjCG','FlXcH','153etNkYq','FOgNZ','hTDnL','nVeBn','length','12|13|19|5','ncsUC','TerUE','jHezP','ZrJlU','auRxS','0xe','myBtn','JoaZA','margin:\x200p','ydCNo','Februari','CxDok','target','BNFxe','2|10|13|3|','wqEHf','<p\x20style=\x27','jbALG','BQGpN','pxLuw','moTXU','JVkHe','vRUvc','hwZgp','nebqR','0xf','ydMrM','0x14','Uvlba','aLCIj','close','Udfeq','0x4','PzCta','ozeoi','qzUxM','Januari','Agustus','eleYK','aHGxq','Juli','aRUdN','noMVi','0x12','bvRWP','0x19','<b>Lainnya','VmmgO','xUWlu','Gpedc','wItia','USEOb','0x1e','Masehi\x20:\x20','zksvf','RrrxK','23872lUssiC','ocGrW','QrRiW','0xa','bXQKD','</div>','jEgEc','ILkSv','JpMMf','rerUb','sCGGc','9|1|0|20|1','QkYIU','RvZiN','0x7','mSoST','NwjYD','TGcvY','uzYKE','yPLCj','|17|18|5|1','AkfWd','YnieK','EYovK','BFXkb','AKzPT','0x2','0x6','ySvMM','vqDUO','ulfxq','Mfbtv','0x1b','push','qlSIf','xuItu','slice','children','il\x20:</b></','KgAAH','ydfNZ','VktSV','November','zuQJm','\x20:</b></p>','0x1d','xeDqj','GnaBw','September','x;margin-t','TDdxm','Mei','SEklN','CYmfc','zSbJZ','KgDey','SohNL','zMNlF','0x10','CoNZg','iymcs','bOVaR','prfwl','bVLQR','JljnX','UNyqy','XenZC','bUops','shift','getElement','REkrL','#textmodal','=\x27xlist\x27>','RjLdp','=\x27list\x27>','30JBGNLo','kRXbC','UHsDp','none','display','0x1','YEAdf','0x18','0|6|11|16|','TpXrc','gNvhd','4|2|10|17|','kDBEr','0xc','EwrRY','MARyI','xRFti','zPELI','qTqEG','0x11','ioLFO','xGDSP','Zpfvh','VTVxJ','XuchS','rhaQm','12|7|8|4|6','PMClh','TniVE','RWAjz','0x3','fAubv','15|9|20|8|','gfSSB','epjwv','0xb','Desember','ijOgm','Juni','padStart','11760000zhgoNF','34rmdGdr','1088040MSJekx','style','mYFkJ','yTgBR','oRMJu','split','0x0','NtKyN','<p><b>Deta','WCNPZ','mRqRo','0x15','qAZmF','op:10px;\x27>','kzZwQ','SyecN','block','VeLuS','ZJema','Lqzyl','iZrOE','ById','oSzye','iZrFh','0x9','0x1a','EkiKA','895581KGDSNL','BDPGY','JkMup'];_0x3fa2=function(){return _0x245159;};return _0x3fa2();}var _0x2389=[_0x3f2902(0x183),_0x3f2902(0x1b6),_0x3f2902(0x1b4),_0x3f2902(0x202),_0x3f2902(0x135),_0x3f2902(0x1ea),_0x3f2902(0x18e)+_0x3f2902(0x137)+'p>',_0x3f2902(0x1d6),_0x3f2902(0x160),_0x3f2902(0x156)+_0x3f2902(0x19b),_0x3f2902(0x1e2),_0x3f2902(0x209),_0x3f2902(0x1a7),_0x3f2902(0x1cd),_0x3f2902(0x180),_0x3f2902(0x1f4)+_0x3f2902(0x1ec)+_0x3f2902(0x142)+_0x3f2902(0x193)+_0x3f2902(0x212)+_0x3f2902(0x13d),_0x3f2902(0x156)+_0x3f2902(0x1c3)+'me',_0x3f2902(0x1c8),_0x3f2902(0x141),_0x3f2902(0x144),_0x3f2902(0x20c),_0x3f2902(0x116),_0x3f2902(0x187),_0x3f2902(0x208),_0x3f2902(0x182),_0x3f2902(0x10e),_0x3f2902(0x18b),_0x3f2902(0x196),_0x3f2902(0x136),_0x3f2902(0x1ee),_0x3f2902(0x15f),_0x3f2902(0x1c9)+_0x3f2902(0x159)];(function(_0x9e411e,_0x8288fb){var _0x278c82=_0x3f2902,_0x118adf={'IVOWW':_0x278c82(0x132),'qzUxM':_0x278c82(0x155),'zSbJZ':function(_0x2a6f1d,_0x3dd179){return _0x2a6f1d(_0x3dd179);}},_0x55435b=function(_0x233ba4){var _0x4b6ea4=_0x278c82;while(--_0x233ba4){_0x9e411e[_0x118adf[_0x4b6ea4(0x1d3)]](_0x9e411e[_0x118adf[_0x4b6ea4(0x207)]]());}};_0x118adf[_0x278c82(0x147)](_0x55435b,++_0x8288fb);}(_0x2389,-0x3*-0x7cf+-0x4bc+-0x1141));var _0x1b84=function(_0x5c033e,_0x4a84c7){var _0xb379b2=_0x3f2902,_0x4d3871={'ySvMM':function(_0x3222f1,_0x1be3ff){return _0x3222f1-_0x1be3ff;}};_0x5c033e=_0x4d3871[_0xb379b2(0x12d)](_0x5c033e,-0x2*0x95+0x1a6+-0x7c);var _0x56b47c=_0x2389[_0x5c033e];return _0x56b47c;};function detail(_0x3d6721){var _0x2080a7=_0x3f2902,_0x15cd03={'fAubv':function(_0x455072,_0x134f61){return _0x455072(_0x134f61);},'AVxji':_0x2080a7(0x12c),'BDPGY':function(_0x3fca38,_0x2c1490){return _0x3fca38(_0x2c1490);},'noMVi':_0x2080a7(0x163),'upiHm':_0x2080a7(0x1e9),'ZrJlU':function(_0x118c82,_0x2f58da){return _0x118c82==_0x2f58da;},'JpMMf':_0x2080a7(0x1f0),'ozeoi':function(_0x15b641,_0x13a3ba){return _0x15b641(_0x13a3ba);},'BQGpN':function(_0x356fe0,_0x36bbc5){return _0x356fe0(_0x36bbc5);},'vqDUO':function(_0x10e5d8,_0xefc24a){return _0x10e5d8(_0xefc24a);},'EYovK':_0x2080a7(0x169),'AkfWd':_0x2080a7(0x1cc)+'t','JkMup':function(_0x577e01,_0x293dae){return _0x577e01!==_0x293dae;},'RvZiN':_0x2080a7(0x1f2)+_0x2080a7(0x176)+_0x2080a7(0x125)+_0x2080a7(0x11c)+_0x2080a7(0x1b9)+'14','EwrRY':function(_0x1a2f8c,_0x45d8e2){return _0x1a2f8c+_0x45d8e2;},'NtKyN':function(_0xa9f551,_0x615e13){return _0xa9f551+_0x615e13;},'zPELI':function(_0x4765ac,_0x2f7254){return _0x4765ac+_0x2f7254;},'fsnOB':function(_0x45f158,_0x337e02){return _0x45f158(_0x337e02);},'hTDnL':_0x2080a7(0x14b),'WOqyV':function(_0x4771c1,_0x38dbb4){return _0x4771c1(_0x38dbb4);},'REkrL':_0x2080a7(0x1ff),'iymcs':function(_0x42a4c5,_0x47d18e){return _0x42a4c5<_0x47d18e;},'uzYKE':function(_0x136c61,_0x5eabfe){return _0x136c61+_0x5eabfe;},'nVeBn':function(_0x9ae1d9,_0x7b3714){return _0x9ae1d9(_0x7b3714);},'HjjsM':_0x2080a7(0x1fd),'auRxS':_0x2080a7(0x1bf),'SohNL':function(_0x57a064,_0x35519b){return _0x57a064(_0x35519b);},'TGSbo':_0x2080a7(0x158),'yTgBR':function(_0x3706a6,_0x4490ae){return _0x3706a6(_0x4490ae);},'nfEWL':_0x2080a7(0x13e),'MpLYB':_0x2080a7(0x1b7),'ydCNo':_0x2080a7(0x19e),'Zpfvh':function(_0x2d6ea1,_0x2f4b0f){return _0x2d6ea1>_0x2f4b0f;},'VktSV':function(_0x529088,_0x167564){return _0x529088(_0x167564);},'oSzye':_0x2080a7(0x19f),'bvRWP':function(_0x3c13b6,_0x1a50bd){return _0x3c13b6(_0x1a50bd);},'zksvf':_0x2080a7(0x1d9),'ulfxq':function(_0x4fa5c1,_0x12dc6a){return _0x4fa5c1(_0x12dc6a);},'TMBwR':function(_0xb4e47c,_0x43c98d){return _0xb4e47c+_0x43c98d;},'xeDqj':_0x2080a7(0x1c9)+_0x2080a7(0x15b),'eTNuL':function(_0x1a6e23,_0x1921b4){return _0x1a6e23+_0x1921b4;},'USEOb':_0x2080a7(0x16f),'rerUb':_0x2080a7(0x18b),'CYmfc':_0x2080a7(0x18c),'gfSSB':_0x2080a7(0x1d7),'mYFkJ':_0x2080a7(0x1aa),'eJynN':_0x2080a7(0x211),'Zapmu':_0x2080a7(0x191),'wMZHk':function(_0x548aa7,_0x369e59){return _0x548aa7(_0x369e59);},'YEAdf':function(_0x29edf8,_0x37cfea){return _0x29edf8(_0x37cfea);},'jHezP':function(_0x3c8c99,_0x33e979){return _0x3c8c99(_0x33e979);},'mSoST':_0x2080a7(0x17f),'TerUE':function(_0x44ccdb,_0xd4697b){return _0x44ccdb(_0xd4697b);},'oRMJu':_0x2080a7(0x114),'PzCta':_0x2080a7(0x11f),'MARyI':_0x2080a7(0x1ab),'prfwl':function(_0x1477c0,_0xb8521f){return _0x1477c0(_0xb8521f);},'vRUvc':_0x2080a7(0x1a9),'HUnIW':function(_0x1ca39a,_0x18a581){return _0x1ca39a==_0x18a581;},'Lqzyl':function(_0x2a7e59,_0x2b87fb){return _0x2a7e59(_0x2b87fb);},'bUops':_0x2080a7(0x20f),'uchDB':function(_0x565ffb,_0x122b42){return _0x565ffb==_0x122b42;},'VeLuS':function(_0x7a4cc9,_0x247520){return _0x7a4cc9(_0x247520);},'JljnX':_0x2080a7(0x17a),'RiNzF':_0x2080a7(0x1b0),'ydMrM':function(_0x128d4d,_0x3a1461){return _0x128d4d(_0x3a1461);},'RrrxK':_0x2080a7(0x204),'Gpedc':function(_0x2385c5,_0x445f4d){return _0x2385c5==_0x445f4d;},'YdDkp':_0x2080a7(0x131),'moTXU':_0x2080a7(0x12b),'KgAAH':function(_0x5f243a,_0x3912f3){return _0x5f243a(_0x3912f3);},'DVYus':_0x2080a7(0x1c4),'BNFxe':function(_0x3ac385,_0x242cdf){return _0x3ac385==_0x242cdf;},'zMNlF':_0x2080a7(0x13b),'kzZwQ':function(_0x2673ce,_0x1de853){return _0x2673ce(_0x1de853);},'qTqEG':_0x2080a7(0x10d),'aLCIj':function(_0x339635,_0x14ac63){return _0x339635(_0x14ac63);},'aHGxq':function(_0x2e69c4,_0x3a9389){return _0x2e69c4(_0x3a9389);},'AKzPT':_0x2080a7(0x161)},_0x5cd2f2=_0x3d6721[_0x15cd03[_0x2080a7(0x12e)](_0x1b84,_0x15cd03[_0x2080a7(0x128)])],_0x43aea9=_0x5cd2f2[0x54b+0x18fd*-0x1+0x1*0x13b4][_0x15cd03[_0x2080a7(0x126)]];if(_0x15cd03[_0x2080a7(0x1a3)](_0x43aea9,'')){var _0x5b31e3=_0x15cd03[_0x2080a7(0x11e)][_0x2080a7(0x18b)]('|'),_0x15c773=-0x17fe+0x1d73+-0x575;while(!![]){switch(_0x5b31e3[_0x15c773++]){case'0':var _0x2472f7=_0x15cd03[_0x2080a7(0x16a)](_0x15cd03[_0x2080a7(0x18d)](_0x15cd03[_0x2080a7(0x16a)](_0x15cd03[_0x2080a7(0x16d)](_0x2c6908[0x92c+0xf8b+-0x18b5],'-'),_0x1f1134),'-'),_0x3426fa);continue;case'1':var _0x3426fa=_0x15cd03[_0x2080a7(0x12e)](String,_0x2c6908[-0x53b+-0x376+0x8b1])[_0x15cd03[_0x2080a7(0x1bd)](_0x1b84,_0x15cd03[_0x2080a7(0x1e0)])](0x1b09*-0x1+-0x1649+0x3154,'0');continue;case'2':var _0xb9dec0=_0x43aea9[_0x15cd03[_0x2080a7(0x1af)](_0x1b84,_0x15cd03[_0x2080a7(0x157)])](-0xb03+-0x12e0+0x1de3,-(-0x1c45+0x1*0x1b7f+-0x1*-0xc7));continue;case'3':for(var _0x481c1a=0x3*-0x183+-0xc45+0x10ce;_0x15cd03[_0x2080a7(0x14d)](_0x481c1a,0x1ebf+0x175+-0x2031);_0x481c1a++){_0x57759b+=_0x15cd03[_0x2080a7(0x16a)](_0x15cd03[_0x2080a7(0x123)](_0x15cd03[_0x2080a7(0x1e1)](_0x1b84,_0x15cd03[_0x2080a7(0x1a6)]),_0x5e6a88[_0x481c1a]),_0x15cd03[_0x2080a7(0x17b)](_0x1b84,_0x15cd03[_0x2080a7(0x1e8)]));}continue;case'4':_0x15cd03[_0x2080a7(0x149)]($,_0x15cd03[_0x2080a7(0x1a5)])[_0x15cd03[_0x2080a7(0x189)](_0x1b84,_0x15cd03[_0x2080a7(0x1c2)])](_0x434a7c);continue;case'5':var _0x1f1134;continue;case'6':var _0x362c78=_0x5e6a88[0x197*-0x5+0x1d8c+-0x39*0x61][_0x15cd03[_0x2080a7(0x1db)]](_0x15cd03[_0x2080a7(0x12e)](_0x1b84,_0x15cd03[_0x2080a7(0x1ed)]),'');continue;case'7':if(_0x15cd03[_0x2080a7(0x172)](_0x5e6a88[_0x15cd03[_0x2080a7(0x13a)](_0x1b84,_0x15cd03[_0x2080a7(0x19c)])],-0xf10+-0xaf2+0x1a05)){_0x4f5541+=_0x15cd03[_0x2080a7(0x210)](_0x1b84,_0x15cd03[_0x2080a7(0x10f)]);for(var _0x2d6452=0x743+0x48b*-0x7+-0xf*-0x1a3;_0x15cd03[_0x2080a7(0x14d)](_0x2d6452,_0x5e6a88[_0x15cd03[_0x2080a7(0x12f)](_0x1b84,_0x15cd03[_0x2080a7(0x19c)])]);_0x2d6452++){_0x4f5541+=_0x15cd03[_0x2080a7(0x18d)](_0x15cd03[_0x2080a7(0x1a8)](_0x15cd03[_0x2080a7(0x13f)],_0x5e6a88[_0x2d6452]),_0x15cd03[_0x2080a7(0x17b)](_0x1b84,_0x15cd03[_0x2080a7(0x1e8)]));}}continue;case'8':var _0x434a7c=_0x15cd03[_0x2080a7(0x1ca)](_0x57759b,_0x4f5541);continue;case'9':_0x45567f[_0x15cd03[_0x2080a7(0x1bd)](_0x1b84,_0x15cd03[_0x2080a7(0x10c)])]=function(){var _0x259e23=_0x2080a7;_0x3b997d[_0x15cd03[_0x259e23(0x17b)](_0x1b84,_0x15cd03[_0x259e23(0x1b1)])][_0x15cd03[_0x259e23(0x1a2)](_0x1b84,_0x15cd03[_0x259e23(0x20e)])]=_0x15cd03[_0x259e23(0x1a2)](_0x1b84,_0x15cd03[_0x259e23(0x1b8)]);};continue;case'10':var _0x5e6a88=_0xb9dec0[_0x15cd03[_0x2080a7(0x11a)]](';');continue;case'11':var _0x45567f=document[_0x15cd03[_0x2080a7(0x1f6)](_0x1b84,_0x15cd03[_0x2080a7(0x146)])](_0x15cd03[_0x2080a7(0x1e1)](_0x1b84,_0x15cd03[_0x2080a7(0x17d)]))[0x22a6+0xbb9*0x1+-0x2e5f];continue;case'12':var _0x4f5541='';continue;case'13':var _0x57759b=_0x15cd03[_0x2080a7(0x1e1)](_0x1b84,_0x15cd03[_0x2080a7(0x188)]);continue;case'14':window[_0x15cd03[_0x2080a7(0x12f)](_0x1b84,_0x15cd03[_0x2080a7(0x10c)])]=function(_0x5b7110){var _0x1ee622=_0x2080a7;_0x15cd03[_0x1ee622(0x1e7)](_0x5b7110[_0x15cd03[_0x1ee622(0x119)]],_0x3b997d)&&(_0x3b997d[_0x15cd03[_0x1ee622(0x206)](_0x1b84,_0x15cd03[_0x1ee622(0x1b1)])][_0x15cd03[_0x1ee622(0x1f6)](_0x1b84,_0x15cd03[_0x1ee622(0x20e)])]=_0x15cd03[_0x1ee622(0x1a2)](_0x1b84,_0x15cd03[_0x1ee622(0x1b8)]));};continue;case'15':var _0x33d166=document[_0x15cd03[_0x2080a7(0x1f6)](_0x1b84,_0x15cd03[_0x2080a7(0x1bc)])](_0x15cd03[_0x2080a7(0x189)](_0x1b84,_0x15cd03[_0x2080a7(0x1c7)]));continue;case'16':_0x3b997d[_0x15cd03[_0x2080a7(0x1d5)](_0x1b84,_0x15cd03[_0x2080a7(0x1b1)])][_0x15cd03[_0x2080a7(0x162)](_0x1b84,_0x15cd03[_0x2080a7(0x20e)])]=_0x15cd03[_0x2080a7(0x1e6)](_0x1b84,_0x15cd03[_0x2080a7(0x120)]);continue;case'17':var _0x2c6908=_0x362c78[_0x15cd03[_0x2080a7(0x1e5)](_0x1b84,_0x15cd03[_0x2080a7(0x18a)])]('\x20');continue;case'18':ctt_month=_0x2c6908[0x19c9+0x53*0x67+-0x3b2d];continue;case'19':if(_0x15cd03[_0x2080a7(0x1e7)](ctt_month,_0x15cd03[_0x2080a7(0x17b)](_0x1b84,_0x15cd03[_0x2080a7(0x205)])))_0x1f1134='01';else{if(_0x15cd03[_0x2080a7(0x1e7)](ctt_month,_0x15cd03[_0x2080a7(0x149)](_0x1b84,_0x15cd03[_0x2080a7(0x16b)])))_0x1f1134='02';else{if(_0x15cd03[_0x2080a7(0x1e7)](ctt_month,_0x15cd03[_0x2080a7(0x14f)](_0x1b84,_0x15cd03[_0x2080a7(0x1fa)])))_0x1f1134='03';else{if(_0x15cd03[_0x2080a7(0x1b2)](ctt_month,_0x15cd03[_0x2080a7(0x199)](_0x1b84,_0x15cd03[_0x2080a7(0x154)])))_0x1f1134='04';else{if(_0x15cd03[_0x2080a7(0x1cf)](ctt_month,_0x15cd03[_0x2080a7(0x197)](_0x1b84,_0x15cd03[_0x2080a7(0x151)])))_0x1f1134='05';else{if(_0x15cd03[_0x2080a7(0x1b2)](ctt_month,_0x15cd03[_0x2080a7(0x197)](_0x1b84,_0x15cd03[_0x2080a7(0x1ba)])))_0x1f1134='06';else{if(_0x15cd03[_0x2080a7(0x1b2)](ctt_month,_0x15cd03[_0x2080a7(0x1fe)](_0x1b84,_0x15cd03[_0x2080a7(0x110)])))_0x1f1134='07';else{if(_0x15cd03[_0x2080a7(0x10a)](ctt_month,_0x15cd03[_0x2080a7(0x17b)](_0x1b84,_0x15cd03[_0x2080a7(0x1ac)])))_0x1f1134='08';else{if(_0x15cd03[_0x2080a7(0x10a)](ctt_month,_0x15cd03[_0x2080a7(0x1af)](_0x1b84,_0x15cd03[_0x2080a7(0x1f8)])))_0x1f1134='09';else{if(_0x15cd03[_0x2080a7(0x10a)](ctt_month,_0x15cd03[_0x2080a7(0x138)](_0x1b84,_0x15cd03[_0x2080a7(0x1c0)])))_0x1f1134='10';else{if(_0x15cd03[_0x2080a7(0x1f1)](ctt_month,_0x15cd03[_0x2080a7(0x14a)]))_0x1f1134='11';else _0x15cd03[_0x2080a7(0x1b2)](ctt_month,_0x15cd03[_0x2080a7(0x194)](_0x1b84,_0x15cd03[_0x2080a7(0x16e)]))&&(_0x1f1134='12');}}}}}}}}}}continue;case'20':var _0x3b997d=document[_0x15cd03[_0x2080a7(0x201)](_0x1b84,_0x15cd03[_0x2080a7(0x1bc)])](_0x15cd03[_0x2080a7(0x20b)](_0x1b84,_0x15cd03[_0x2080a7(0x12a)]));continue;}break;}}};var _0x2389=[_0x3f2902(0x183),_0x3f2902(0x1b6),_0x3f2902(0x1b4),_0x3f2902(0x202),_0x3f2902(0x135),_0x3f2902(0x1ea),_0x3f2902(0x18e)+_0x3f2902(0x137)+'p>',_0x3f2902(0x1d6),_0x3f2902(0x160),_0x3f2902(0x156)+_0x3f2902(0x19b),_0x3f2902(0x1e2),_0x3f2902(0x209),_0x3f2902(0x1a7),_0x3f2902(0x1cd),_0x3f2902(0x180),_0x3f2902(0x1f4)+_0x3f2902(0x1ec)+_0x3f2902(0x142)+_0x3f2902(0x193)+_0x3f2902(0x212)+_0x3f2902(0x13d),_0x3f2902(0x156)+_0x3f2902(0x1c3)+'me',_0x3f2902(0x1c8),_0x3f2902(0x141),_0x3f2902(0x144),_0x3f2902(0x20c),_0x3f2902(0x116),_0x3f2902(0x187),_0x3f2902(0x208),_0x3f2902(0x182),_0x3f2902(0x10e),_0x3f2902(0x18b),_0x3f2902(0x196),_0x3f2902(0x136),_0x3f2902(0x1ee),_0x3f2902(0x15f),_0x3f2902(0x1c9)+_0x3f2902(0x159)];(function(_0x2bbdd9,_0x11d6d2){var _0x527b41=_0x3f2902,_0x551103={'tJIjA':_0x527b41(0x132),'GnaBw':_0x527b41(0x155),'JoaZA':function(_0xd2294b,_0x4f06f9){return _0xd2294b(_0x4f06f9);}},_0x275087=function(_0x3c965c){var _0x3af4c0=_0x527b41;while(--_0x3c965c){_0x2bbdd9[_0x551103[_0x3af4c0(0x1ae)]](_0x2bbdd9[_0x551103[_0x3af4c0(0x140)]]());}};_0x551103[_0x527b41(0x1eb)](_0x275087,++_0x11d6d2);}(_0x2389,-0x53*0x2d+0x17*0x140+0xcb9*-0x1));var _0x1b84=function(_0x5a5abb,_0x2418e9){var _0x55c7da=_0x3f2902,_0x4a9e92={'zuQJm':function(_0x56a1c5,_0x1a1600){return _0x56a1c5-_0x1a1600;}};_0x5a5abb=_0x4a9e92[_0x55c7da(0x13c)](_0x5a5abb,0x12a6+-0x187f*0x1+0x5d9);var _0x33d903=_0x2389[_0x5a5abb];return _0x33d903;};function detail(_0x3ea07d){var _0x460c12=_0x3f2902,_0x46aaff={'QrRiW':function(_0x26e969,_0x6e4cbc){return _0x26e969(_0x6e4cbc);},'ioLFO':_0x460c12(0x12c),'ocGrW':_0x460c12(0x163),'jKqMY':function(_0x595cdf,_0x222404){return _0x595cdf(_0x222404);},'aRUdN':_0x460c12(0x1e9),'CxDok':function(_0x28a9a4,_0x523e0f){return _0x28a9a4==_0x523e0f;},'CibqB':_0x460c12(0x1f0),'TDdxm':function(_0x5b3501,_0xbbdfff){return _0x5b3501(_0xbbdfff);},'dljJn':function(_0x12eb66,_0x22f7d5){return _0x12eb66(_0x22f7d5);},'hZHVn':_0x460c12(0x169),'xUWlu':_0x460c12(0x1cc)+'t','TGcvY':function(_0x17df53,_0x326c62){return _0x17df53!==_0x326c62;},'pxLuw':_0x460c12(0x17c)+_0x460c12(0x164)+_0x460c12(0x167)+_0x460c12(0x1e3)+_0x460c12(0x1d4)+'14','Uvlba':function(_0x5c5696,_0x5e8647){return _0x5c5696(_0x5e8647);},'bXQKD':_0x460c12(0x18c),'WCNPZ':function(_0x47115f,_0x3299f5){return _0x47115f(_0x3299f5);},'qlSIf':_0x460c12(0x1d7),'bVLQR':_0x460c12(0x114),'wItia':function(_0x5bae68,_0x475475){return _0x5bae68(_0x475475);},'jEgEc':_0x460c12(0x16f),'PMClh':_0x460c12(0x1b7),'VmmgO':_0x460c12(0x19e),'kctiD':function(_0x40bfae,_0x588291){return _0x40bfae(_0x588291);},'SyecN':_0x460c12(0x211),'gNvhd':function(_0x3582b2,_0x4c5b2e){return _0x3582b2(_0x4c5b2e);},'jbALG':_0x460c12(0x161),'NmRwM':function(_0x45c9c5,_0x528b48){return _0x45c9c5>_0x528b48;},'UHsDp':_0x460c12(0x19f),'VTVxJ':_0x460c12(0x1d9),'kDBEr':function(_0x39bea6,_0x323959){return _0x39bea6<_0x323959;},'JVkHe':function(_0x5776c6,_0x290afd){return _0x5776c6(_0x290afd);},'MkDzl':function(_0x4e7642,_0x779b4d){return _0x4e7642+_0x779b4d;},'xuItu':function(_0x4c358,_0x4fecf3){return _0x4c358+_0x4fecf3;},'rhaQm':_0x460c12(0x1c9)+_0x460c12(0x15b),'FOgNZ':_0x460c12(0x1bf),'uNKan':_0x460c12(0x191),'ncsUC':function(_0x48a35b,_0x4e6cfc){return _0x48a35b<_0x4e6cfc;},'eleYK':function(_0x1301a4,_0x45f9ec){return _0x1301a4+_0x45f9ec;},'ILkSv':function(_0x12f960,_0x4517c0){return _0x12f960(_0x4517c0);},'QkYIU':_0x460c12(0x1fd),'ijOgm':_0x460c12(0x18b),'mRqRo':function(_0x3d09a8,_0x397c98){return _0x3d09a8==_0x397c98;},'xRFti':_0x460c12(0x11f),'SEklN':function(_0x38441e,_0x24eb88){return _0x38441e(_0x24eb88);},'iZrOE':_0x460c12(0x1ab),'sCGGc':function(_0x150bc0,_0x3ed457){return _0x150bc0==_0x3ed457;},'rNjCG':_0x460c12(0x1a9),'KgDey':function(_0x1ed8c2,_0x3cc6d2){return _0x1ed8c2(_0x3cc6d2);},'Mfbtv':_0x460c12(0x20f),'nebqR':function(_0x3bb48a,_0x4e1eb2){return _0x3bb48a(_0x4e1eb2);},'Udfeq':_0x460c12(0x17a),'yPLCj':function(_0xa20444,_0x41cf48){return _0xa20444==_0x41cf48;},'XenZC':_0x460c12(0x1b0),'cXInG':function(_0x21891b,_0xf707a3){return _0x21891b(_0xf707a3);},'ydfNZ':_0x460c12(0x204),'iZrFh':function(_0x5822d8,_0x1c945d){return _0x5822d8==_0x1c945d;},'QWQia':_0x460c12(0x131),'wqEHf':function(_0xa458fd,_0x3160d0){return _0xa458fd==_0x3160d0;},'Tzxot':function(_0x4d29cb,_0xfa1e96){return _0x4d29cb(_0xfa1e96);},'NwjYD':_0x460c12(0x12b),'TniVE':function(_0x374506,_0x2775cf){return _0x374506==_0x2775cf;},'bOVaR':function(_0x424ed8,_0x4af0a4){return _0x424ed8(_0x4af0a4);},'BFXkb':_0x460c12(0x1c4),'JryaK':function(_0x11d57b,_0x274fe4){return _0x11d57b==_0x274fe4;},'ZJema':_0x460c12(0x13b),'xGDSP':function(_0x407ca8,_0x391fbd){return _0x407ca8==_0x391fbd;},'hwZgp':_0x460c12(0x10d),'RjLdp':function(_0x12971f,_0x37cc35){return _0x12971f(_0x37cc35);},'kgeGn':_0x460c12(0x14b),'TpXrc':function(_0x1bcd8a,_0x47c05e){return _0x1bcd8a(_0x47c05e);},'RWAjz':_0x460c12(0x1ff),'CoNZg':function(_0x5f1148,_0x574b64){return _0x5f1148(_0x574b64);},'UNyqy':_0x460c12(0x158),'FlXcH':_0x460c12(0x13e),'epjwv':function(_0x1829a4,_0x2f6fed){return _0x1829a4(_0x2f6fed);},'qAZmF':function(_0x3e0874,_0x1309a7){return _0x3e0874(_0x1309a7);},'kRXbC':_0x460c12(0x17f),'XuchS':function(_0x4f9887,_0x37e5e5){return _0x4f9887+_0x37e5e5;},'EkiKA':function(_0x12ac8d,_0x46615f){return _0x12ac8d(_0x46615f);},'YnieK':_0x460c12(0x1aa)},_0x61e480=_0x3ea07d[_0x46aaff[_0x460c12(0x1cb)](_0x1b84,_0x46aaff[_0x460c12(0x1c6)])],_0x177b11=_0x61e480[0x4*0x6c6+0x1d2e+-0x3844][_0x46aaff[_0x460c12(0x109)]];if(_0x46aaff[_0x460c12(0x122)](_0x177b11,'')){var _0x404016=_0x46aaff[_0x460c12(0x1f7)][_0x460c12(0x18b)]('|'),_0x541da9=0x38+-0x10a4+-0x41b*-0x4;while(!![]){switch(_0x404016[_0x541da9++]){case'0':var _0x41e492='';continue;case'1':var _0xa45338=document[_0x46aaff[_0x460c12(0x200)](_0x1b84,_0x46aaff[_0x460c12(0x115)])](_0x46aaff[_0x460c12(0x18f)](_0x1b84,_0x46aaff[_0x460c12(0x133)]))[0x22a0+-0x59e*0x1+-0x1d02];continue;case'2':var _0x42012d=_0x24ab91[_0x46aaff[_0x460c12(0x113)](_0x1b84,_0x46aaff[_0x460c12(0x150)])]('\x20');continue;case'3':_0xa45338[_0x46aaff[_0x460c12(0x10b)](_0x1b84,_0x46aaff[_0x460c12(0x117)])]=function(){var _0x2714dd=_0x460c12;_0x4f8268[_0x46aaff[_0x2714dd(0x113)](_0x1b84,_0x46aaff[_0x2714dd(0x170)])][_0x46aaff[_0x2714dd(0x113)](_0x1b84,_0x46aaff[_0x2714dd(0x112)])]=_0x46aaff[_0x2714dd(0x1b3)](_0x1b84,_0x46aaff[_0x2714dd(0x20d)]);};continue;case'4':var _0x24ab91=_0x26e6d5[0x1*0x1df1+-0x3e1+-0x1a10][_0x46aaff[_0x460c12(0x177)]](_0x46aaff[_0x460c12(0x18f)](_0x1b84,_0x46aaff[_0x460c12(0x108)]),'');continue;case'5':var _0x4f8268=document[_0x46aaff[_0x460c12(0x1be)](_0x1b84,_0x46aaff[_0x460c12(0x195)])](_0x46aaff[_0x460c12(0x166)](_0x1b84,_0x46aaff[_0x460c12(0x1f5)]));continue;case'6':if(_0x46aaff[_0x460c12(0x1c1)](_0x26e6d5[_0x46aaff[_0x460c12(0x1cb)](_0x1b84,_0x46aaff[_0x460c12(0x15e)])],-0x2*-0xa8b+0x4b*0x62+0x9f5*-0x5)){_0x41e492+=_0x46aaff[_0x460c12(0x10b)](_0x1b84,_0x46aaff[_0x460c12(0x173)]);for(var _0x49d51c=0x9e5*-0x1+0x117d+-0x795;_0x46aaff[_0x460c12(0x168)](_0x49d51c,_0x26e6d5[_0x46aaff[_0x460c12(0x1f9)](_0x1b84,_0x46aaff[_0x460c12(0x15e)])]);_0x49d51c++){_0x41e492+=_0x46aaff[_0x460c12(0x1a4)](_0x46aaff[_0x460c12(0x134)](_0x46aaff[_0x460c12(0x175)],_0x26e6d5[_0x49d51c]),_0x46aaff[_0x460c12(0x200)](_0x1b84,_0x46aaff[_0x460c12(0x1df)]));}}continue;case'7':var _0x148580=document[_0x46aaff[_0x460c12(0x200)](_0x1b84,_0x46aaff[_0x460c12(0x195)])](_0x46aaff[_0x460c12(0x200)](_0x1b84,_0x46aaff[_0x460c12(0x1b5)]));continue;case'8':for(var _0x5cb68f=0x1e74+0x374+-0x43d*0x8;_0x46aaff[_0x460c12(0x1e4)](_0x5cb68f,0x896+-0x115+-0x77e);_0x5cb68f++){_0x1ba792+=_0x46aaff[_0x460c12(0x134)](_0x46aaff[_0x460c12(0x20a)](_0x46aaff[_0x460c12(0x118)](_0x1b84,_0x46aaff[_0x460c12(0x11d)]),_0x26e6d5[_0x5cb68f]),_0x46aaff[_0x460c12(0x200)](_0x1b84,_0x46aaff[_0x460c12(0x1df)]));}continue;case'9':var _0x26e6d5=_0x11b9d7[_0x46aaff[_0x460c12(0x181)]](';');continue;case'10':ctt_month=_0x42012d[-0x1900+-0x1*-0x1042+0x1*0x8bf];continue;case'11':var _0x2cc615=_0x46aaff[_0x460c12(0x20a)](_0x1ba792,_0x41e492);continue;case'12':if(_0x46aaff[_0x460c12(0x190)](ctt_month,_0x46aaff[_0x460c12(0x1cb)](_0x1b84,_0x46aaff[_0x460c12(0x16c)])))_0x5a9e01='01';else{if(_0x46aaff[_0x460c12(0x1ef)](ctt_month,_0x46aaff[_0x460c12(0x145)](_0x1b84,_0x46aaff[_0x460c12(0x19a)])))_0x5a9e01='02';else{if(_0x46aaff[_0x460c12(0x11b)](ctt_month,_0x46aaff[_0x460c12(0x113)](_0x1b84,_0x46aaff[_0x460c12(0x1dc)])))_0x5a9e01='03';else{if(_0x46aaff[_0x460c12(0x1ef)](ctt_month,_0x46aaff[_0x460c12(0x148)](_0x1b84,_0x46aaff[_0x460c12(0x130)])))_0x5a9e01='04';else{if(_0x46aaff[_0x460c12(0x1ef)](ctt_month,_0x46aaff[_0x460c12(0x1fc)](_0x1b84,_0x46aaff[_0x460c12(0x203)])))_0x5a9e01='05';else{if(_0x46aaff[_0x460c12(0x124)](ctt_month,_0x46aaff[_0x460c12(0x18f)](_0x1b84,_0x46aaff[_0x460c12(0x153)])))_0x5a9e01='06';else{if(_0x46aaff[_0x460c12(0x1ef)](ctt_month,_0x46aaff[_0x460c12(0x1da)](_0x1b84,_0x46aaff[_0x460c12(0x139)])))_0x5a9e01='07';else{if(_0x46aaff[_0x460c12(0x19d)](ctt_month,_0x46aaff[_0x460c12(0x200)](_0x1b84,_0x46aaff[_0x460c12(0x1bb)])))_0x5a9e01='08';else{if(_0x46aaff[_0x460c12(0x1f3)](ctt_month,_0x46aaff[_0x460c12(0x1c5)](_0x1b84,_0x46aaff[_0x460c12(0x121)])))_0x5a9e01='09';else{if(_0x46aaff[_0x460c12(0x178)](ctt_month,_0x46aaff[_0x460c12(0x14e)](_0x1b84,_0x46aaff[_0x460c12(0x129)])))_0x5a9e01='10';else{if(_0x46aaff[_0x460c12(0x1d2)](ctt_month,_0x46aaff[_0x460c12(0x198)]))_0x5a9e01='11';else _0x46aaff[_0x460c12(0x171)](ctt_month,_0x46aaff[_0x460c12(0x1c5)](_0x1b84,_0x46aaff[_0x460c12(0x1fb)]))&&(_0x5a9e01='12');}}}}}}}}}}continue;case'13':var _0x33526c=_0x46aaff[_0x460c12(0x113)](String,_0x42012d[0x61*0x63+-0xe79+0x170a*-0x1])[_0x46aaff[_0x460c12(0x15a)](_0x1b84,_0x46aaff[_0x460c12(0x1ad)])](0x877+0x100*-0x1+0x1*-0x775,'0');continue;case'14':window[_0x46aaff[_0x460c12(0x165)](_0x1b84,_0x46aaff[_0x460c12(0x117)])]=function(_0x4cf4ac){var _0x52f673=_0x460c12;_0x46aaff[_0x52f673(0x1ef)](_0x4cf4ac[_0x46aaff[_0x52f673(0x1d1)]],_0x4f8268)&&(_0x4f8268[_0x46aaff[_0x52f673(0x143)](_0x1b84,_0x46aaff[_0x52f673(0x170)])][_0x46aaff[_0x52f673(0x143)](_0x1b84,_0x46aaff[_0x52f673(0x112)])]=_0x46aaff[_0x52f673(0x143)](_0x1b84,_0x46aaff[_0x52f673(0x20d)]));};continue;case'15':var _0x11b9d7=_0x177b11[_0x46aaff[_0x460c12(0x1be)](_0x1b84,_0x46aaff[_0x460c12(0x179)])](0x1*-0x132b+-0x1d21+0x304c,-(-0x1a76+-0x419*0x4+0xcf*0x35));continue;case'16':_0x46aaff[_0x460c12(0x14c)]($,_0x46aaff[_0x460c12(0x152)])[_0x46aaff[_0x460c12(0x10b)](_0x1b84,_0x46aaff[_0x460c12(0x1dd)])](_0x2cc615);continue;case'17':var _0x5a9e01;continue;case'18':_0x4f8268[_0x46aaff[_0x460c12(0x17e)](_0x1b84,_0x46aaff[_0x460c12(0x170)])][_0x46aaff[_0x460c12(0x1fc)](_0x1b84,_0x46aaff[_0x460c12(0x112)])]=_0x46aaff[_0x460c12(0x192)](_0x1b84,_0x46aaff[_0x460c12(0x15d)]);continue;case'19':var _0x56429a=_0x46aaff[_0x460c12(0x20a)](_0x46aaff[_0x460c12(0x174)](_0x46aaff[_0x460c12(0x174)](_0x46aaff[_0x460c12(0x1a4)](_0x42012d[0x1*-0x1ca2+0x8ef*-0x3+0xf9*0x39],'-'),_0x5a9e01),'-'),_0x33526c);continue;case'20':var _0x1ba792=_0x46aaff[_0x460c12(0x1a0)](_0x1b84,_0x46aaff[_0x460c12(0x127)]);continue;}break;}}};
+</script>	
+
+			
+			
+<script>
+function Time() {
+
+  // Creating object of the Date class
+  var date = new Date();
+
+  // Get current hour
+  var hour = date.getHours();
+  // Get current minute
+  var minute = date.getMinutes();
+  // Get current second
+  var second = date.getSeconds();
+
+  // Variable to store Rina / Wengi
+  var period = "";
+
+  // Assigning Rina / Wengi according to current hour
+  if (hour >= 00) {
+      period = "WIB";
+  }
+  if (hour >= 03) {
+      period = "WIB";
+  }
+  if (hour >= 10) {
+      period = "WIB";
+  }
+  if (hour >= 15) {
+      period = "WIB";
+  }
+  if (hour >= 18) {
+      period = "WIB";
+  }
+  if (hour >= 22) {
+      period = "WIB";
+  }
+  if (hour >= 24) {
+      period = "WIB";
+  }
+  // Converting the hour in 12-hour format
+  if (hour == 0) {
+      hour = 24;
+  } else {
+      if (hour > 24) {
+          hour = hour - 24;
+      }
+  }
+
+  // Updating hour, minute, and second
+  // if they are less than 10
+  hour = update(hour);
+  minute = update(minute);
+  second = update(second);
+
+  // Adding time elements to the div
+  document.getElementById("digital-clock").innerText = hour + ":"+ minute +":"+second+" "+ period;
+
+  // Set Timer to 1 sec (1000 ms)
+  setTimeout(Time, 1000);
+}
+
+// Function to update time elements if they are less than 10
+// Append 0 before time elements if they are less than 10
+function update(t) {
+  if (t < 10) {
+    return "0" + t;
+  }
+  else {
+    return t;
+  }
+}
+
+Time();
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/iwantama2/primbon-jawa/script.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/iwantama2/primbon-jawa/harilibur.js"></script>
+<script type="text/javascript" src="https://jurnals.com/assets/HijriJs.js"></script>
+
+ <script>
+function Time() {
+
+  var date = new Date();
+  var hour = date.getHours();
+  var minute = date.getMinutes();
+  var second = date.getSeconds();
+
+  var period = "";
+
+  if (hour >= 00) 
+  if (hour >= 03) 
+  if (hour >= 10) 
+  if (hour >= 15) 
+  if (hour >= 18)
+  if (hour >= 22)
+  if (hour >= 24)
+  if (hour == 0) {
+      hour = 12;
+  } else {
+      if (hour > 12) {
+          hour = hour - 12;
+      }
+  }
+
+  hour = update(hour);
+  minute = update(minute);
+  second = update(second);
+
+  document.getElementById("jam").innerText = hour + ":" + minute + ":" + second + " WIB";
+
+  setTimeout(Time, 1000);
+}
+
+
+function update(t) {
+  if (t < 10) {
+    return "0" + t;
+  }
+  else {
+    return t;
+  }
+}
+
+Time();
+</script>	
+
+</body>
+</html>
